@@ -9,7 +9,7 @@ website:
       - href: about.qmd
         text: À propos
       - icon: github
-        href: https://github.com/
+        href: https://github.com/RochDLY/sci6203
       - icon: twitter
         href: https://twitter.com
 format:
