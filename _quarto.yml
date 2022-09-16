@@ -12,6 +12,11 @@ website:
         href: https://github.com/RochDLY/sci6203
       - icon: twitter
         href: https://twitter.com
+    left:
+      - href: rendu1-YA.qmd
+        text: Analyse par Yann Audin
+      - href: rendu1-YA.qmd
+        text: Analyse par Roch Delannay
 format:
   html:
     theme: superhero
