@@ -14,13 +14,6 @@
     "text": "code\n\n\nnews\n\n\n\nTest avec ipynb\n\n\n\nRoch D.\n\n\nSep 16, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nSep 16, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nSep 13, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "posts/welcome/index.html",
-    "href": "posts/welcome/index.html",
-    "title": "Welcome To My Blog",
-    "section": "",
-    "text": "Since this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts.\nModification apres changement de methode de deploiement."
-  },
-  {
     "objectID": "posts/post-with-code/ZoteroAfficheAlfred.html",
     "href": "posts/post-with-code/ZoteroAfficheAlfred.html",
     "title": "Zotero API",
@@ -33,5 +26,12 @@
     "title": "Post With Code",
     "section": "",
     "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "posts/carnet/index.html",
+    "href": "posts/carnet/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "Since this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts.\nModification apres changement de methode de deploiement."
   }
 ]
