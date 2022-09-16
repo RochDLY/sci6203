@@ -1,0 +1,37 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Accueil",
+    "section": "",
+    "text": "Zotero API\n\n\n\ncode\n\n\nnews\n\n\n\nTest avec ipynb\n\n\n\nRoch D.\n\n\nSep 16, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPost With Code\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nSep 16, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nWelcome To My Blog\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nSep 13, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "About",
+    "section": "",
+    "text": "Les technologies mises en oeuvre sont :\nQuarto\nJupyter Notebook\nLes développements et les contenus sont réalisés par :\nYann Audin, doctorant à l’Université de Montréal.\nRoch Delannay, doctorant à l’Université de Montréal."
+  },
+  {
+    "objectID": "posts/welcome/index.html",
+    "href": "posts/welcome/index.html",
+    "title": "Welcome To My Blog",
+    "section": "",
+    "text": "Since this post doesn’t specify an explicit image, the first image in the post will be used in the listing page of posts."
+  },
+  {
+    "objectID": "posts/post-with-code/index.html",
+    "href": "posts/post-with-code/index.html",
+    "title": "Post With Code",
+    "section": "",
+    "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "posts/post-with-code/ZoteroAfficheAlfred.html",
+    "href": "posts/post-with-code/ZoteroAfficheAlfred.html",
+    "title": "Zotero API",
+    "section": "",
+    "text": "import sys # pour travailler sur le système et installer ensuite...\n!{sys.executable} -m pip install folium # ... folium qui permet d'afficher des données sur une carte\nimport folium # le voici folium - beau nom latin\nimport requests # il fa falloir faire des demandes, des requêtes, demander de l'information\nimport json # et l'avoir dans un format, json, qu'il va ensuite falloir lire - mais qui le lit?\nRequirement already satisfied: folium in /home/foudre/.local/lib/python3.8/site-packages (0.12.1.post1) Requirement already satisfied: requests in /usr/lib/python3/dist-packages (from folium) (2.22.0) Requirement already satisfied: branca>=0.3.0 in /home/foudre/.local/lib/python3.8/site-packages (from folium) (0.5.0) Requirement already satisfied: numpy in /home/foudre/.local/lib/python3.8/site-packages (from folium) (1.23.2) Requirement already satisfied: jinja2>=2.9 in /home/foudre/.local/lib/python3.8/site-packages (from folium) (3.1.2) Requirement already satisfied: MarkupSafe>=2.0 in /home/foudre/.local/lib/python3.8/site-packages (from jinja2>=2.9->folium) (2.1.1)\nla_carte = folium.Map([0, 0], zoom_start=2)\n\n\nfrom pyzotero import zotero\nzot = zotero.Zotero(\"4764734\", \"group\")\nitems = zot.top()\n# we've retrieved the latest five top-level items in our library\n# we can print each item's item type and ID\nfor item in items:\n    print('Item: %s | Coord: %s' % (item['data']['title'], item['data']['extra']))\nItem: Montréal, lieu du tournage du documentaire sur Alfred DesRochers | Coord: 45.50722944003804, -73.56817483947667 Item: Le journal La Tribune de Sherbrooke | Coord: 45.40433770802925, -71.89384429673274 Item: Manoir du Vieux-Prince | Coord: 45.40831932038737, -73.56656838983916 Item: Remise du doctorat honoris causa (Université de Sherbrooke) à Alfred DesRochers | Coord: 45.37791, -71.92944 Item: « Soir d’été à St-Denis de Brompton » : le crapaud de la discorde | Coord: 45.45775, -72.08027\nfor item in items:\n   print(item['data']['extra'].split(',')[0], item['data']['extra'].split(',')[1], item['data']['relations'])\n45.50722944003804 -73.56817483947667 {‘dc:relation’: ‘http://zotero.org/groups/4764734/items/I9CGD68K’} 45.40433770802925 -71.89384429673274 {} 45.40831932038737 -73.56656838983916 {} 45.37791 -71.92944 {‘dc:relation’: ‘http://zotero.org/groups/4764734/items/MV23P8HQ’} 45.45775 -72.08027 {}\nm = folium.Map([45.4533, -72.0], zoom_start=8)\nfor item in items:\n    \n    folium.Marker([item['data']['extra'].split(',')[0], item['data']['extra'].split(',')[1]],\n        popup = item['data']['title'],\n    ).add_to(m)\nm\nMake this Notebook Trusted to load map: File -> Trust Notebook\nimport branca\n\nm = folium.Map([45.4533, -72.0], zoom_start=8)\n\nfor item in items:\n    html = '<h1>'+item['data']['title']+'</h1>'+'<br/> <b>Légende:</b> '+item['data']['abstractNote']+'<br/> <b>Date:</b> '+item['data']['date']+'<br/> <b>Lieu:</b> '+item['data']['place']\n\n    iframe = branca.element.IFrame(html=html,width=510,height=280)\n    popup = folium.Popup(folium.Html(html, script=True), max_width=500)\n    \n    folium.Marker([item['data']['extra'].split(',')[0], item['data']['extra'].split(',')[1]],\n        popup = popup,\n        ).add_to(m)\n\nm\nMake this Notebook Trusted to load map: File -> Trust Notebook\nm.save('carte.html')"
+  }
+]
