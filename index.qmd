@@ -12,4 +12,3 @@ title-block-banner: true
 ---
 
 
-Un peu de contenu 

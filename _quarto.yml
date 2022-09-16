@@ -6,14 +6,15 @@ website:
   title: "SCI6203"
   navbar:
     right:
-      - about.qmd
+      - href: about.qmd
+        text: À propos
       - icon: github
         href: https://github.com/
       - icon: twitter
         href: https://twitter.com
 format:
   html:
-    theme: yeti
+    theme: superhero
     css: styles.css
     code-fold: false
 
