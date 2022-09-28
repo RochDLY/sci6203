@@ -6,6 +6,8 @@ image: "thumbnail.jpg"
 categories: [blog]
 ---
 
+Résumé de l'article de Fayyad.
+
 ## From Data Mining to Knowledge Discovery in Databases
 
 Ce n'est pas la première fois que je rencontre ce texte classique de Fayyad, Piatetsky-Shapiro et Smyth qui semble être considéré comme l'entrée en matière par excellence depuis sa publication en 1996 avec plus de 12 000 citations répertoriées sur Scholar en 2022. 

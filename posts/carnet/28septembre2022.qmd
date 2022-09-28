@@ -5,6 +5,8 @@ date: "2022-09-28"
 categories: [information]
 ---
 
+Consignes et plan pour le premier rendu.
+
 ## Évaluation pour le [2022-10-13]
 
 Définir la problématique et présenter 10 travaux (plus ou moins deux) en lien avec la problématique.
