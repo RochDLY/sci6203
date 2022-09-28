@@ -1,0 +1,22 @@
+---
+title: "Partie 1. Définition de la problématique et présentation de travaux reliés"
+author: "Roch Delannay"
+date: "2022-09-28"
+categories: [information]
+---
+
+## Évaluation pour le [2022-10-13]
+
+Définir la problématique et présenter 10 travaux (plus ou moins deux) en lien avec la problématique.
+
+### Consignes
+
+- Rédiger entre 4 ou 5 pages pour l'état de l'art :
+    - Pour chaque texte de la bibliographie commentée :
+        - Corpus
+        - Méthodes
+        - Résultats
+- Rédiger entre 1 ou 2 pages pour détailler la problématique.
+
+
+
