@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "Accueil",
     "section": "",
-    "text": "news\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nSep 16, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nSep 13, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "blog\n\n\n\n\n\n\n\nYann Audin\n\n\nSep 21, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnews\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nSep 16, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nnews\n\n\n\n\n\n\n\nTristan O’Malley\n\n\nSep 13, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/carnet/index.html",
@@ -26,5 +26,12 @@
     "title": "Post With Code",
     "section": "",
     "text": "This is a post with executable code."
+  },
+  {
+    "objectID": "posts/carnet/fayyad.html",
+    "href": "posts/carnet/fayyad.html",
+    "title": "From Data Mining to Knowledge Discovery in Database: Une approche littéraire",
+    "section": "",
+    "text": "Lecture critique de l’article\nLa découverte de connaissances dans les bases de données offre deux promesses des plus attirantes aux chercheurs des sciences humaines. D’un côté, la possibilité de confirmer ou d’infirmer des modèles théoriques à l’aide d’une étude statistique de leurs objets. De l’autre, la découverte de connaissances qui ne sont pas supportées ou prise en compte par la théorie, et donc l’ouverture de nouveaux horizons théoriques. Ce processus dans le contexte des sciences humaines est décrit par les auteurs comme un processus lent et précis : la prudence est de mise pour générer des connaissances réelles et utiles. Un chercheur se doit de faire des choix cohérents à chaque étape du processus en gardant toujours au centre de ses décisions deux valeurs : la vérité et l’éthique. Ainsi, les humanités numériques sont perpétuellement en questionnement, elles doutent d’elles-mêmes par défaut tant pour assurer la qualité de leurs résultats que pour protéger les sujets de leurs recherches. Cela est limitant dans plusieurs domaines qui pourraient profiter de plus de libertés expérimentales tout en protégeant les potentiels sujets qui pourraient en souffrir. Ces questions éthiques et épistémologiques ne sont pas partagées par d’autres domaines qui font usage de la découverte de connaissance dans les bases de données. Les valeurs au cœur d’une démarche la transforme radicalement, il y a donc une différence radicale entre le développement d’outils numériques de recherche et ceux développés par les secteurs privés. Dans ce dernier cas, les motivations premières qui guide l’écriture des algorithmes servent la métrique du profit et ont l’avantage de pouvoir être raffiné rapidement alors que différentes méthodes peuvent être testées à grandes échelles sans égard pour l’éthique. De bien des façons, les expériences algorithmiques de géants du web font de leurs utilisateurs des rats de laboratoire à l’échelle mondiale sacrifié à l’autel de l’argent."
   }
 ]
