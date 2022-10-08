@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "Accueil",
     "section": "",
-    "text": "journal\n\n\n\n\n\n\n\nYann Audin et Roch Delannay\n\n\nOct 7, 2022\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\ninformation\n\n\n\n\n\n\n\nRoch Delannay\n\n\nSep 28, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nblog\n\n\n\n\n\n\n\nYann Audin\n\n\nSep 21, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nSep 16, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "journal\n\n\n\n\n\n\n\nRoch Delannay\n\n\nOct 8, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nYann Audin et Roch Delannay\n\n\nOct 7, 2022\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\ninformation\n\n\n\n\n\n\n\nRoch Delannay\n\n\nSep 28, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nblog\n\n\n\n\n\n\n\nYann Audin\n\n\nSep 21, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nHarlow Malloc\n\n\nSep 16, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post-with-code/index.html",
@@ -54,6 +54,20 @@
     "title": "Partie 1. Définition de la problématique et présentation de travaux reliés",
     "section": "Évaluation pour le [2022-10-13]",
     "text": "Évaluation pour le [2022-10-13]\nDéfinir la problématique et présenter 10 travaux (plus ou moins deux) en lien avec la problématique.\n\nConsignes\n\nRédiger entre 4 ou 5 pages pour l’état de l’art :\n\nPour chaque texte de la bibliographie commentée :\n\nCorpus\nMéthodes\nRésultats\n\n\nRédiger entre 1 ou 2 pages pour détailler la problématique."
+  },
+  {
+    "objectID": "posts/carnet/laurens.html",
+    "href": "posts/carnet/laurens.html",
+    "title": "Revue de littérature : Laurens",
+    "section": "",
+    "text": "Court résumé du chapitre 3 de L’Abeille dans l’ambre."
+  },
+  {
+    "objectID": "posts/carnet/laurens.html#laurens-p.-2012.-le-modèle-et-la-variation-dans-labeille-dans-lambre.-les-belles-lettres.",
+    "href": "posts/carnet/laurens.html#laurens-p.-2012.-le-modèle-et-la-variation-dans-labeille-dans-lambre.-les-belles-lettres.",
+    "title": "Revue de littérature : Laurens",
+    "section": "Laurens, P. (2012). “Le modèle et la variation”, Dans L’Abeille dans l’ambre. Les Belles Lettres.",
+    "text": "Laurens, P. (2012). “Le modèle et la variation”, Dans L’Abeille dans l’ambre. Les Belles Lettres.\n“Le modèle et la variation” est le troisième chapitre de l’ouvrage L’Abeille dans l’ambre, rédigé par Pierre Laurens. Cet ouvrage poursuit une réflexion menée sur “l’essence” du style épigrammatique, notamment celles de l’Anthologie grecque, qui s’est étalé sur presque deux millénaires entre l’époque alexandrine et la fin de la Renaissance. Plus que retracer son histoire, Pierre Laurens analyse et découpe l’évolution de ce style littéraire. Dans le chapitre qui nous intéresse, Laurens propose de modéliser une typologie des entre modèle et variations des épigrammes. Comme mentionné en introduction, la variation est un art rhétorique prisé des poètes grecs, génère tour à tour concurrence ou dialogue entre eux et cela de manière diachronique. La typologie décrite par l’auteur comporte trois niveaux distincts de variation, le premier niveaux étant le styliste, le deuxième rhétorique et le dernier res ou paradigmatique.\n\nLa variation stylistique porte sur les mots et leur agencement : “déplacements d’éléments invariables, substitutions d’ordre lexical ou stylistique” (p. 124) ;\nLa variation rhétorique s’attache à démultiplier à l’infini les possibilités d’expressions d’une même idée (p.127).\nLa variation paradigmatique concerne la dernière variable de l’épigramme : le sujet. Il s’agit ici de changer le sujet de l’épigramme, appelant ainsi un nouveau champ lexical adapté à ce nouveau sujet. Les variations de ce niveau ont un potentiel infini (p. 128).\n\nCette typologie devient un outil de catégorisation des variations qui, à partir d’un modèle, sera utilisée dans notre projet de fouille de texte pour identifier lesdites variations dans le corpus anthologique."
   },
   {
     "objectID": "posts/carnet/presentation.html",
