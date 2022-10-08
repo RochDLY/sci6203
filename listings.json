@@ -2,10 +2,10 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/carnet/presentation.html",
       "/posts/carnet/28septembre2022.html",
       "/posts/carnet/fayyad.html",
-      "/posts/post-with-code/index.html",
-      "/posts/carnet/index.html"
+      "/posts/post-with-code/index.html"
     ]
   }
 ]
