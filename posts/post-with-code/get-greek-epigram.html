@@ -214,6 +214,11 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 
 
 <p>Récupération des épigrammes en grec via l’API de l’Anthologie grecque pour former notre corpus.</p>
+<section id="récupération-des-données-de-lapi" class="level2">
+<h2 class="anchored" data-anchor-id="récupération-des-données-de-lapi">Récupération des données de l’API</h2>
+<p>Les données sont disponibles via l’URL : http://anthologiagraeca.org/api/passages.<br>
+Pour les récupérer nous les injectons sous forme de liste dans une variable <code>results</code>.<br>
+L’API sert les données paginées, de fait les données récupérées sont limitées à la première page. Or nous voulons récupérer l’ensemble du corpus. Pour parer cette fonctionnalité nous créons une boucle <code>while</code> pour modifier l’URL de la page (vers la page suivante) et indexer toutes les données dans notre variable.</p>
 <div class="cell" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Importation of the useful libraries </span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Definition of our variables for the requests </span></span>
@@ -237,12 +242,20 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 <span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
 <span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>        url <span class="op">=</span> data[<span class="st">'next'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
+</section>
+<section id="vérification-1" class="level2">
+<h2 class="anchored" data-anchor-id="vérification-1">Vérification 1</h2>
+<p>La première vérification consiste à comparer le nombre de résultats obtenus avec le nombre total d’épigrammes indexées dans le portail de l’Atnhologie grecque.</p>
 <div class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(results)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <pre><code>4134</code></pre>
 </div>
 </div>
+</section>
+<section id="écriture-dun-fichier" class="level2">
+<h2 class="anchored" data-anchor-id="écriture-dun-fichier">Écriture d’un fichier</h2>
+<p>Maintenant que nous avons bien récupéré nos données nous souhaitons créer un fichier au format json que nous pourrons utiliser pour les futures étapes de notre fouille de texte.</p>
 <div class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>mesTextes <span class="op">=</span> []</span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> epigram <span class="kw">in</span> results:</span>
@@ -255,6 +268,7 @@ code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warni
 </div>
 
 
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
