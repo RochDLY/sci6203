@@ -7,9 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Roch Delannay">
-<meta name="dcterms.date" content="2022-10-16">
+<meta name="dcterms.date" content="2022-10-17">
 
-<title>SCI6203 - Revue de littérature : Crane et Bamman</title>
+<title>SCI6203 - Revue de littérature : Buchler et al.</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -112,7 +112,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Revue de littérature : Crane et Bamman</h1>
+      <h1 class="title">Revue de littérature : Buchler et al.</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">journal</div>
               </div>
@@ -132,7 +132,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">October 16, 2022</p>
+        <p class="date">October 17, 2022</p>
       </div>
     </div>
       
@@ -149,14 +149,15 @@ ul.task-list li input[type="checkbox"] {
 
 
 
-<p>Court résumé de l’article de Bamman, D et Crane, G. (2009).</p>
+<p>Court résumé de l’article de Büchler, Marco; Geßner, Annette; Eckart, Thomas; Heyer, Gerhard. (2010).</p>
 <p><img src="anthalgo.jpg" class="img-fluid"></p>
-<section id="bamman-d.-et-crane-g.-2009.-structured-knowledge-for-low-resource-languages-the-latin-and-ancient-greek-dependency-treebanks." class="level2">
-<h2 class="anchored" data-anchor-id="bamman-d.-et-crane-g.-2009.-structured-knowledge-for-low-resource-languages-the-latin-and-ancient-greek-dependency-treebanks.">Bamman, D. et Crane, G. (2009). Structured Knowledge for Low-Resource Languages: The Latin and Ancient Greek Dependency Treebanks.</h2>
-<p>Cet article sert à décrire la création de corpus arborés (de larges collections de données annotées) pour le latin et le grec ancien. Deux objectifs sont poursuivis pour ces corpus classiques : découvrir des connaissances lexicales et identifier des modèles de réutilisation de textes.</p>
-<p>Contexte : les techniques de fouille de texte expriment leur potentiel pour des corpus généralement anglais ou germanophone car ces derniers sont très étendus. Les ressources disponibles pour les corpus en langues anciennes (comme le grec et le latin) parraissent bien pâles à côté. Le constat réalisé tend à montrer que le bon fonctionnement des algorithmes de fouille de texte est quantitativement proportionnel à la quantité de textes disponibles dans un corpus : verdict, Bamman et Crane estiment que toutes les informations d’un texte ne sont pas extraites et qu’ils peuvent s’y atteler, notamment sur les corpus sous-représentés comme latin et grec.</p>
-<p>Le corpus sur lesquels s’appuie cette étude sont composés d’une large collection de phrases syntaxiquement annotées, appelée <em>treebanks</em>, dont chaque mot fait l’objet d’une explicitation de sa relation aux autres mots de la phrase dans laquelle il s’inscrit. Ces données peuvent être représentées sous forme de graphes puis encodées en XML. Les corpus latins utilisés sont ceux de la <em>Prague Dependency Treebank</em>, de l’<em>Index Thomisticus</em> et le corpus PROIEL du <em>Nouveau Testament</em>. Les corpus en grec ancien sont plus larges et comportent des écrits tels que les tragédies grecques, Platon, les récits d’Homère (<em>L’Iliade</em> et <em>L’Odyssée</em>), et bien d’autres.</p>
-<p>La première approche des corpus est <strong>lexicale</strong> : elle permet de définir ce que chaque mot veut dire et ses interactions avec les autres mots. Ensuite, la deuxième méthode appliquée au corpus consistait à mettre les corpus et leurs traductions dans différentes langues en <strong>parallèle</strong> pour trouver le sens des mots par équivalence. Ces informations permettent de mieux définir les relations entre les mots. Les résultats obtenus dans la plupart des recherches sur la réutilisation de texte (et leurs variations) fonctionne comme indiqué précédemment : les méthodes sont adatpées aux langues vivantes mais pas réellement au corpus des langues anciennes. Malgré la petite taille du corpus (50 000 mots), les méthodes permettent d’élaborer 12 caractéritisques syntaxiques pour chaque mot dans une phrase (des combinaisons de la représentation au niveau du mot, sous la forme de token, de lemme ou simplement de partie du discours).</p>
+<section id="büchler-marco-geßner-annette-eckart-thomas-heyer-gerhard.-2010.-unsupervised-detection-and-visualisation-of-textual-reuse-on-ancient-greek-texts.-colloquium-on-digital-humanities-and-computer-science." class="level2">
+<h2 class="anchored" data-anchor-id="büchler-marco-geßner-annette-eckart-thomas-heyer-gerhard.-2010.-unsupervised-detection-and-visualisation-of-textual-reuse-on-ancient-greek-texts.-colloquium-on-digital-humanities-and-computer-science.">Büchler, Marco; Geßner, Annette; Eckart, Thomas; Heyer, Gerhard. (2010). Unsupervised Detection and Visualisation of Textual Reuse on Ancient Greek Texts. Colloquium on Digital Humanities and Computer Science.</h2>
+<p>Cet article se concentre sur l’étude des références indiquées dans les textes en grec ancien : grâce aux références mentionnées par les auteurs, il est possible de vérifier ou questionner le texte d’une édition d’un texte en grec ancien. Dans cet article, les liens entre ces passages de texte sont appelés <em>Reuse Graph G</em>. Avec ce type de graphe il est possible de quantifier le degré d’importance de la réutilisation d’un texte (traduction littérale de l’article, les auteur.e.s préfèrent l’emploi de <em>reuse text</em> plutôt que <em>citation</em>) d’un auteur par rapport aux autres auteurs à travers le temps.</p>
+<p>Malgré la petite taille du corpus en grec ancien, en comparaison des corpus disponible dans différentes langues vivantesm il est quasiment impossible de référencer et d’étiqueter tous les passages de textes réutilisés manuellement : ce qui démontre l’intérêt d’utiliser un ordinateur pour ce travail. Un des corpus en grec ancien les plus utilisés est le TLG (<em>Thesaurus Linguae Graecae</em>), largement annoté depuis plusieurs décennies.</p>
+<p>Les méthodes de comparaisons des paires de liens entre deux passages sont extrêmement longues, même à raison de 1000 comparaisons par seconde, elles sont donc écartées pour cette étude.</p>
+<p>La première étape est celle de la <strong>segmentation</strong> du corpus : différents marqueurs dans le texte, combinés avec des listes d’abréviations, permettent d’améliorer cette segmentation et la détection des fragments de textes réutilisés. Concernant la <strong>tokenisation</strong>, en addition des marqueurs de ponctuation, tous les crochets de la convention Leiden sont supprimés. Les résultats montrent une segmentation du TLG en 5 520 060 phrases selon une moyenne de 13.51 mots par phrase. L’étape de <strong>normalisation</strong> passe par la mise en minuscule du corpus, car plusieurs mots peuvent être écrits selon des variantes en minuscule ou majuscule, rendant la tâche plus délicate pour les algorithmes sensibles à la casse qui de fait ignore un passage de texte réutilisé. Une autre variation peut générer des erreurs : la variation morphologique. Pour parer ce problème, les chercheurs ont recours au processus de <strong>Lemmatisation</strong> en utilisant l’analyseur morphologique Morpheus pour réduire les mots à leur forme la plus simple. Ensuite, deux <strong>approches syntaxiques</strong> sont testées et comparées : une approche basée sur la statistique de l’expansion des <em>n-grams</em> et une autre approche, sémantique, basée sur la segmentation des unités linguistiques. La première approche permet de trouver la plus longue correspondance commune d’une réutilisation avec le texte original. Une conséquence négative de cette approche est que tous les préfixes communs de la plus longue correspondances (au moins 5 mots) sont produits. En conséquence de quoi il faut prévoir une étape supplémentaire de <em>post-procesing</em> pour supprimer les préfixes. Toutefois, la réutilisation de texte n’est pas seulement en rapport avec les mots mais également avec le sens des idées transmises : une approche sémantique est nécessaire. La méthode employée est celle des <em>sub-graphs</em>, et consiste en l’élaboration de graphes de co-occurence sémantique (association de réseau de mots d’un corpus décrit par un ensemble de mots uniques. et un ensemble d’associations). Pour le corpus du TLG, plus de 300 millions de co-occurences ont été calculées (en comptabilisant les 10% de <em>stopwords</em>). Dernière étape de la méthode : la <strong>visualisation</strong>. Les auteurs distinguent deux niveaux de visualisation : macro et micro. La vue macro se rapportent à des diagrammes traditionnels alors que la vue micro est visualisée par des surlignements du texte pour mettre en valeur les variations dans les correspondances.</p>
+<p>Les résultats obtenus avec cette méthode montre que la similarité des correspondances entre les fragments de texte n’est quasiment jamais identique. Elle varie entre un score allant de 0.2 jusqu’à 0.9, et le score le plus élevé sur toutes les références ne dépasse pas les 18% (score de 0.8).</p>
 
 
 </section>
