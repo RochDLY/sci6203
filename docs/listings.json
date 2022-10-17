@@ -2,12 +2,12 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/carnet/craneEtBamman.html",
       "/posts/post-with-code/get-greek-epigram.html",
       "/posts/carnet/laurens.html",
       "/posts/carnet/presentation.html",
       "/posts/carnet/28septembre2022.html",
-      "/posts/carnet/fayyad.html",
-      "/posts/post-with-code/index.html"
+      "/posts/carnet/fayyad.html"
     ]
   }
 ]
