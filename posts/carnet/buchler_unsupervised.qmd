@@ -1,0 +1,28 @@
+---
+title: "Revue de littérature : Buchler et al."
+author: "Roch Delannay"
+date: "2022-10-17"
+categories: [journal]
+---
+
+Court résumé de l'article de Büchler, Marco; Geßner, Annette; Eckart, Thomas; Heyer, Gerhard. (2010).
+
+![](anthalgo.jpg)
+
+## Büchler, Marco; Geßner, Annette; Eckart, Thomas; Heyer, Gerhard. (2010). Unsupervised Detection and Visualisation of Textual Reuse on Ancient Greek Texts. Colloquium on Digital Humanities and Computer Science.
+
+Cet article se concentre sur l'étude des références indiquées dans les textes en grec ancien : grâce aux références mentionnées par les auteurs, il est possible de vérifier ou questionner le texte d'une édition d'un texte en grec ancien. Dans cet article, les liens entre ces passages de texte sont appelés _Reuse Graph G_. Avec ce type de graphe il est possible
+de quantifier le degré d'importance de la réutilisation d'un texte (traduction littérale de l'article, les auteur.e.s préfèrent l'emploi de _reuse text_ plutôt que _citation_) d'un auteur par rapport aux autres auteurs à travers le temps.
+
+Malgré la petite taille du corpus en grec ancien, en comparaison des corpus disponible dans différentes langues vivantesm il est quasiment impossible de référencer et d'étiqueter tous les passages de textes réutilisés manuellement : ce qui démontre l'intérêt d'utiliser un ordinateur pour ce travail. Un des corpus en grec ancien les plus utilisés est le TLG (_Thesaurus Linguae Graecae_), largement annoté depuis plusieurs décennies.
+
+Les méthodes de comparaisons des paires de liens entre deux passages sont extrêmement longues, même à raison de 1000 comparaisons par seconde, elles sont donc écartées pour cette étude.
+
+La première étape est celle de la **segmentation** du corpus : différents marqueurs dans le texte, combinés avec des listes d'abréviations, permettent d'améliorer cette segmentation et la détection des fragments de textes réutilisés.
+Concernant la **tokenisation**, en addition des marqueurs de ponctuation, tous les crochets de la convention Leiden sont supprimés. Les résultats montrent une segmentation du TLG en 5 520 060 phrases selon une moyenne de 13.51 mots par phrase.
+L'étape de **normalisation** passe par la mise en minuscule du corpus, car plusieurs mots peuvent être écrits selon des variantes en minuscule ou majuscule, rendant la tâche plus délicate pour les algorithmes sensibles à la casse qui de fait ignore un passage de texte réutilisé.
+Une autre variation peut générer des erreurs : la variation morphologique. Pour parer ce problème, les chercheurs ont recours au processus de **Lemmatisation** en utilisant l'analyseur morphologique Morpheus pour réduire les mots à leur forme la plus simple.
+Ensuite, deux **approches syntaxiques** sont testées et comparées : une approche basée sur la statistique de l'expansion des *n-grams* et une autre approche, sémantique, basée sur la segmentation des unités linguistiques. La première approche permet de trouver la plus longue correspondance commune d'une réutilisation avec le texte original. Une conséquence négative de cette approche est que tous les préfixes communs de la plus longue correspondances (au moins 5 mots) sont produits. En conséquence de quoi il faut prévoir une étape supplémentaire de _post-procesing_ pour supprimer les préfixes. Toutefois, la réutilisation de texte n'est pas seulement en rapport avec les mots mais également avec le sens des idées transmises : une approche sémantique est nécessaire. La méthode employée est celle des _sub-graphs_, et consiste en l'élaboration de graphes de co-occurence sémantique (association de réseau de mots d'un corpus décrit par un ensemble de mots uniques. et un ensemble d'associations). Pour le corpus du TLG, plus de 300 millions de co-occurences ont été calculées (en comptabilisant les 10% de _stopwords_).
+Dernière étape de la méthode : la **visualisation**. Les auteurs distinguent deux niveaux de visualisation : macro et micro. La vue macro se rapportent à des diagrammes traditionnels alors que la vue micro est visualisée par des surlignements du texte pour mettre en valeur les variations dans les correspondances.
+
+Les résultats obtenus avec cette méthode montre que la similarité des correspondances entre les fragments de texte n'est quasiment jamais identique. Elle varie entre un score allant de 0.2 jusqu'à 0.9, et le score le plus élevé sur toutes les références ne dépasse pas les 18% (score de 0.8).

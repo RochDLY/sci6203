@@ -1,7 +1,7 @@
 ---
 title: "Revue de littérature : Crane et Bamman"
 author: "Roch Delannay"
-date: "2022-10-17"
+date: "2022-10-16"
 categories: [journal]
 ---
 

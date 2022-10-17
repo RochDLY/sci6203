@@ -3,7 +3,7 @@ title: "From Data Mining to Knowledge Discovery in Database: Une approche litté
 author: "Yann Audin"
 date: "2022-09-21"
 image: "thumbnail.jpg"
-categories: [blog]
+categories: [journal]
 ---
 
 Résumé de l'article de Fayyad.
