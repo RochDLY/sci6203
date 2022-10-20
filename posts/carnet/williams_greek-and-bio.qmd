@@ -1,0 +1,18 @@
+---
+title: "Revue de littérature : Williams et al.."
+author: "Roch Delannay"
+date: "2022-10-20"
+categories: [journal]
+---
+
+Court résumé de l'article de A. C. Williams, "Identification of Ancient Greek Papyrus Fragments Using Genetic Sequence Alignment Algorithms".
+
+![](anthalgo.jpg)
+
+## A. C. Williams et al. (2014). "Identification of Ancient Greek Papyrus Fragments Using Genetic Sequence Alignment Algorithms," 2014 IEEE 10th International Conference on e-Science
+
+Cet article s'intéresse aux fragments de papyrus grecs endommagés, situés dans les restes du village égyptien Oxyrhynchus. Depuis une centaine d'années, seulement 10% des fragments ont pu être édités ; le travail d'identification, de transcription et d'édition des fragments abîmés est très long, il faut parfois plus d'une année pour identifier selon une méthodologie traditionnelle ne serait-ce qu'un fragment.
+La proposition de cette étude concerne l'identification des caractères manquants dans les fragments, en introduisant une nouvelle méthodologie basée sur les algorithmes d'alignement de séquence génétique en biologie comme méthode pour identifier le grec ancien. Le principe de cette méthode repose sur le déploiement d'une matrice de substitution qui permet de vérifier l'alignement mutuel des correspondances. Cette matrice comporte un score de probabilité d'alignement des caractères (dans le cas de la génétique il s'agit d'alignement entre les acides aminés). Si le score dépasse un certain seuil fixé par l'utilisateur, alors la paire de séquences pertinente est identifiée.
+L'équipe de recherche a modifié un algorithme populaire d'alignement des séquences génétiques par paires, Basic Local Alignment Search Tool (BLAST v2.2.28), dès lors baptisé Greek-BLAST. À l'origine, BLAST utilise la famille de matrices BLOSUM comme matrice de substitution, laquelle sera utilisée comme base pour créer la matrice de substitution GLOSUM (Greek Letter Oriented Substitution Matrix) afin de calculer la fréquence cible pour chaque paire de lettres (à partir des travaux réalisés à l'Université d'Oxford lors du projet _Ancient Lives_).
+Après entrainement et application de la méthodologie sur un corpus simul de 14 100 fragments, les résultats obtenus sont divisés en 5 catégories de fragments : non-édité, édité selon un taux d'erreur, taux de caractères supplémentaires, taux d'écart vertical. Les taux d'identification dépassent les 86%, le plus faible étant de 86,9% pour les fragments catégorisés selon le taux d'écart vertical et le plus élevé, sans surprise, pour les fragments non édités est de 89,6%. 
+En conclusion de cet articles, les auteur.e.s sont satisfait de la méthodologie mise en place, tout en notant que d'autres algorithmes d'alignement de séquences génétiques profiteraient de cette approche.
