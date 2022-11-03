@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "Accueil",
     "section": "",
-    "text": "journal\n\n\n\n\n\n\n\nRoch Delannay\n\n\nOct 20, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nRoch Delannay\n\n\nOct 17, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nRoch Delannay\n\n\nOct 16, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nRoch Delannay\n\n\nOct 14, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nRoch Delannay\n\n\nOct 8, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nYann Audin et Roch Delannay\n\n\nOct 7, 2022\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\ninformation\n\n\n\n\n\n\n\nRoch Delannay\n\n\nSep 28, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nYann Audin\n\n\nSep 21, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "journal\n\n\n\n\n\n\n\nRoch Delannay\n\n\nNov 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nRoch Delannay\n\n\nOct 20, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nRoch Delannay\n\n\nOct 17, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nRoch Delannay\n\n\nOct 16, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nRoch Delannay\n\n\nOct 14, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nRoch Delannay\n\n\nOct 8, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nYann Audin et Roch Delannay\n\n\nOct 7, 2022\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\ninformation\n\n\n\n\n\n\n\nRoch Delannay\n\n\nSep 28, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nYann Audin\n\n\nSep 21, 2022\n\n\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "posts/post-with-code/get-greek-epigram.html",
@@ -54,6 +54,34 @@
     "title": "Revue de littérature : Williams et al..",
     "section": "A. C. Williams et al. (2014). “Identification of Ancient Greek Papyrus Fragments Using Genetic Sequence Alignment Algorithms,” 2014 IEEE 10th International Conference on e-Science",
     "text": "A. C. Williams et al. (2014). “Identification of Ancient Greek Papyrus Fragments Using Genetic Sequence Alignment Algorithms,” 2014 IEEE 10th International Conference on e-Science\nCet article s’intéresse aux fragments de papyrus grecs endommagés, situés dans les restes du village égyptien Oxyrhynchus. Depuis une centaine d’années, seulement 10% des fragments ont pu être édités ; le travail d’identification, de transcription et d’édition des fragments abîmés est très long, il faut parfois plus d’une année pour identifier selon une méthodologie traditionnelle ne serait-ce qu’un fragment. La proposition de cette étude concerne l’identification des caractères manquants dans les fragments, en introduisant une nouvelle méthodologie basée sur les algorithmes d’alignement de séquence génétique en biologie comme méthode pour identifier le grec ancien. Le principe de cette méthode repose sur le déploiement d’une matrice de substitution qui permet de vérifier l’alignement mutuel des correspondances. Cette matrice comporte un score de probabilité d’alignement des caractères (dans le cas de la génétique il s’agit d’alignement entre les acides aminés). Si le score dépasse un certain seuil fixé par l’utilisateur, alors la paire de séquences pertinente est identifiée. L’équipe de recherche a modifié un algorithme populaire d’alignement des séquences génétiques par paires, Basic Local Alignment Search Tool (BLAST v2.2.28), dès lors baptisé Greek-BLAST. À l’origine, BLAST utilise la famille de matrices BLOSUM comme matrice de substitution, laquelle sera utilisée comme base pour créer la matrice de substitution GLOSUM (Greek Letter Oriented Substitution Matrix) afin de calculer la fréquence cible pour chaque paire de lettres (à partir des travaux réalisés à l’Université d’Oxford lors du projet Ancient Lives). Après entrainement et application de la méthodologie sur un corpus simul de 14 100 fragments, les résultats obtenus sont divisés en 5 catégories de fragments : non-édité, édité selon un taux d’erreur, taux de caractères supplémentaires, taux d’écart vertical. Les taux d’identification dépassent les 86%, le plus faible étant de 86,9% pour les fragments catégorisés selon le taux d’écart vertical et le plus élevé, sans surprise, pour les fragments non édités est de 89,6%. En conclusion de cet articles, les auteur.e.s sont satisfait de la méthodologie mise en place, tout en notant que d’autres algorithmes d’alignement de séquences génétiques profiteraient de cette approche."
+  },
+  {
+    "objectID": "posts/carnet/test-orange.html",
+    "href": "posts/carnet/test-orange.html",
+    "title": "Test du logiciel Orange",
+    "section": "",
+    "text": "Premiers tests avec l’outil Orange Data Mining."
+  },
+  {
+    "objectID": "posts/carnet/test-orange.html#installation",
+    "href": "posts/carnet/test-orange.html#installation",
+    "title": "Test du logiciel Orange",
+    "section": "Installation",
+    "text": "Installation\nL’installation du logiciel sur ma machine s’est déroulée sans accroc : la manipulation est très simple, il suffit de lancer la commande pip install orange3 dans le terminal, puis une fois les paquets installés, il faut utiliser la commande python -m Orange.canvas et le tour est joué ! Le logiciel se lance !"
+  },
+  {
+    "objectID": "posts/carnet/test-orange.html#principe-de-fonctionnement",
+    "href": "posts/carnet/test-orange.html#principe-de-fonctionnement",
+    "title": "Test du logiciel Orange",
+    "section": "Principe de fonctionnement",
+    "text": "Principe de fonctionnement\nOrange est basé sur le principe de visual programming (un peu comme les logiciels Pure Data ou Max/MSP). Une fenêtre s’ouvre et l’utilisateur doit assembler des widgets dans le plan de travail pour créer son workflow.\nTout workflow est initié par l’importation des données, auxquelles seront appliqués différents traitements en vue d’obtenir les résultats escomptés. Orange est tout autant utilisé pour faire de la fouille de données que de la fouille de textes.\nCi-dessous un premier test réalisé avec un des jeux de données (test) fourni par le logiciel.\n\nLe jeu de données est un corpus de texte au format .tab.\nLe premier widget que nous appliquerons au corpus sera le preprocess text.\n\nCette phase permet de transformer notre texte (application du lowercase pour enlever les majuscules), de le tokeniser grâce à l’expression régulière \\w+ (pour matcher avec tous les caractères), puis de le filtrer grâce à une liste de stopwords en anglais.\nLe deuxième widget sera appliqué au corpus preprocessé, il s’agit du widget bag of words\n\nBag of words permet de générer un compteur pour chaque donnée du document.\nLe troisième widget de ce workflow s’appelle Distances.\n\nIl permet de calculer la distance entre les document (cosinus). Plus la distance est petite, plus les documents sont proches et similaire.\nLe quatrième widget se nomme Hierarchical Clustering.\n\nCette étape marque le début de la visualisation des résultats après transformation des données : elle permet de visualiser la hiérarchie des documents à travers un dendrogramme.\nLe dernier widget, encore une visualisation, est intitulé MDS.\n\nIl offre une visualisation spatiale de nos données."
+  },
+  {
+    "objectID": "posts/carnet/test-orange.html#commentaires",
+    "href": "posts/carnet/test-orange.html#commentaires",
+    "title": "Test du logiciel Orange",
+    "section": "Commentaires",
+    "text": "Commentaires\nUn autre test a été réalisé avec notre corpus d’épigrammes au format .csv (français, anglais, grec ancien) et il n’a pas été aussi simple d’appliquer ce workflow à nos données. Les résultats obtenus ne faisaient pas sens : autant la génération d’un nuage de mot (avec le widget wordcloud) est très facile, autant les calculs de distance et la création de clusters hiérarchisés ne fonctionnait pas. Le problème est relativement simple à cibler : le corpus n’est pas annoté par des étiquettes, alors que le corpus fourni par Orange l’est.\nNotre prochaine étape de travail sera donc de traiter notre corpus pour le rendre “intelligible” pour ce logiciel."
   },
   {
     "objectID": "posts/carnet/fayyad.html",
