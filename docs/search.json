@@ -11,7 +11,35 @@
     "href": "index.html",
     "title": "Accueil",
     "section": "",
-    "text": "journal\n\n\n\n\n\n\n\nRoch Delannay\n\n\nNov 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nRoch Delannay\n\n\nOct 20, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nRoch Delannay\n\n\nOct 17, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nRoch Delannay\n\n\nOct 16, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncode\n\n\nanalysis\n\n\n\n\n\n\n\nRoch Delannay\n\n\nOct 14, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nRoch Delannay\n\n\nOct 8, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nYann Audin et Roch Delannay\n\n\nOct 7, 2022\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\ninformation\n\n\n\n\n\n\n\nRoch Delannay\n\n\nSep 28, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nYann Audin\n\n\nSep 21, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+    "text": "code\n\n\n\n\n\n\n\nRoch Delannay\n\n\nNov 4, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nRoch Delannay\n\n\nNov 2, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nRoch Delannay\n\n\nOct 20, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nRoch Delannay\n\n\nOct 17, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nRoch Delannay\n\n\nOct 16, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\ncode\n\n\n\n\n\n\n\nRoch Delannay\n\n\nOct 14, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nRoch Delannay\n\n\nOct 8, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nYann Audin et Roch Delannay\n\n\nOct 7, 2022\n\n\n\n\n\n\n\n\n\n\n \n\n\n\n\n\ninformation\n\n\n\n\n\n\n\nRoch Delannay\n\n\nSep 28, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\njournal\n\n\n\n\n\n\n\nYann Audin\n\n\nSep 21, 2022\n\n\n\n\n\n\n\n\nNo matching items"
+  },
+  {
+    "objectID": "posts/post-with-code/get-greek-epigram-csv.html",
+    "href": "posts/post-with-code/get-greek-epigram-csv.html",
+    "title": "Récupération du corpus 2",
+    "section": "",
+    "text": "Récupération des épigrammes en grec via l’API de l’Anthologie grecque pour former notre corpus."
+  },
+  {
+    "objectID": "posts/post-with-code/get-greek-epigram-csv.html#récupération-des-données-de-lapi",
+    "href": "posts/post-with-code/get-greek-epigram-csv.html#récupération-des-données-de-lapi",
+    "title": "Récupération du corpus 2",
+    "section": "Récupération des données de l’API",
+    "text": "Récupération des données de l’API\nLes données sont disponibles via l’URL : http://anthologiagraeca.org/api/passages.\nPour les récupérer nous les injectons sous forme de liste dans une variable results.\nL’API sert les données paginées, de fait les données récupérées sont limitées à la première page. Or nous voulons récupérer l’ensemble du corpus. Pour parer cette fonctionnalité nous créons une boucle while pour modifier l’URL de la page (vers la page suivante) et indexer toutes les données dans notre variable.\n\n# Importation of the useful libraries \n# Definition of our variables for the requests \n\nimport requests\nimport json\nimport csv\n\nurl = 'http://anthologiagraeca.org/api/passages'\nparameters = {\n    'format':'json',\n    'limit':'500'\n}\nresults = []\npagination= True\nwhile pagination == True :\n    data = requests.get(url, parameters).json()\n    for result in data['results'] :\n        results.append(result)\n    if data['next'] is None:\n        pagination = False\n    else:\n        url = data['next']"
+  },
+  {
+    "objectID": "posts/post-with-code/get-greek-epigram-csv.html#vérification-1",
+    "href": "posts/post-with-code/get-greek-epigram-csv.html#vérification-1",
+    "title": "Récupération du corpus 2",
+    "section": "Vérification 1",
+    "text": "Vérification 1\nLa première vérification consiste à comparer le nombre de résultats obtenus avec le nombre total d’épigrammes indexées dans le portail de l’Atnhologie grecque.\n\nlen(results)\n\n4134"
+  },
+  {
+    "objectID": "posts/post-with-code/get-greek-epigram-csv.html#écriture-dun-fichier",
+    "href": "posts/post-with-code/get-greek-epigram-csv.html#écriture-dun-fichier",
+    "title": "Récupération du corpus 2",
+    "section": "Écriture d’un fichier",
+    "text": "Écriture d’un fichier\nMaintenant que nous avons bien récupéré nos données nous souhaitons créer un fichier au format json que nous pourrons utiliser pour les futures étapes de notre fouille de texte.\nNouvel export : nous avions prévu de travailler au format JSON, mais la plupart des logiciels de fouille de textes prennent du le format CSV en entrée ! Du coup nous avons retravaillé l’export de l’API pour avoir du JSON et du CSV\n\n# Export au format json\nmesTextes = []\nfor epigram in results:\n    mesTextes.append({'url': epigram['url'], 'greekText': [text for text in epigram['texts'] if text['language'] == 'grc']})\n\n# export au format csv\nmesChamps = ['url', 'greekText']\nmesEpigrammes = []\nfor epigram in results:\n    for text in epigram['texts']:\n        if text['language'] == 'grc':\n            mesEpigrammes.append([epigram['url'], text['text']])\n\n\n# export au format json\nout_file = open('greek-epigram.json', 'w')\n\njson.dump(mesTextes, out_file, indent=3, ensure_ascii=False)\n\n# export au format csv\nwith open('EpigramsGreek.csv', 'w') as f:\n      \n    # using csv.writer method from CSV package\n    write = csv.writer(f)\n      \n    write.writerow(mesChamps)\n    write.writerows(mesEpigrammes)"
   },
   {
     "objectID": "posts/post-with-code/get-greek-epigram.html",
