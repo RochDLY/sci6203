@@ -9,7 +9,7 @@
 <meta name="author" content="Roch Delannay">
 <meta name="dcterms.date" content="2022-11-08">
 
-<title>SCI6203 - Écriture du TP02 part2</title>
+<title>SCI6203 - Écriture du TP02</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +22,69 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1.6em;
   vertical-align: middle;
 }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { color: #008000; } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { color: #008000; font-weight: bold; } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
 </style>
 
 
@@ -112,7 +175,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">Écriture du TP02 part2</h1>
+      <h1 class="title">Écriture du TP02</h1>
                                 <div class="quarto-categories">
                 <div class="quarto-category">journal</div>
               </div>
@@ -150,35 +213,102 @@ ul.task-list li input[type="checkbox"] {
 
 
 <p>Compte-rendu du TP02 : description du corpus de données.</p>
-<section id="rappel-des-critères" class="level2">
-<h2 class="anchored" data-anchor-id="rappel-des-critères">Rappel des critères</h2>
-<ol type="1">
-<li>Critères généraux − Titre − Auteur(s) − Date de publication − Référence complète − Droits d’auteurs et contraintes juridiques − Taille (nombre de mots du corpus entier et moyenne approximative du nombre de mots des documents)</li>
-<li>Critères technologiques − Provenance − Support − Format(s) des documents constituants le corpus</li>
-<li>Critères Informationnels − Discipline − Sujets − Présentation sommaire du corpus − Justification du lien entre la tâche à réaliser et le corpus</li>
-<li>Critères linguistiques − Genre − Registre de langue − Langue</li>
-<li>Difficultés rencontrées et commentaires − Veuillez indiquer les difficultés que vous avez rencontrées ou les commentaires que vous jugez pertinents de noter lors de la constitution de votre corpus, le cas échéant.</li>
-</ol>
-</section>
 <section id="présentation-du-corpus" class="level2">
 <h2 class="anchored" data-anchor-id="présentation-du-corpus">Présentation du corpus</h2>
+<p>Vitali-Rosati, Marcello, Elsa Bouchard, Christian Raschle. “Pour une édition numérique collaborative de l’Anthologie grecque.” Chaire de recherche du Canada sur les écritures numériques, Accédé le 9 novembre 2022, &lt;url = https://anthologiagraeca.org/&gt;.</p>
+<p>Pour une liste complète des collaborateurs (coordination, développement, éditeurs, partenaires, etc.), consulter le site web <a href="https://anthologiagraeca.org/pages/equipe-et-partenaires/">https://anthologiagraeca.org/pages/equipe-et-partenaires/</a>.</p>
+<p>Une grande partie des textes en grec ancien et des traductions en anglais sont tirés de :</p>
+<p>Paton, W. R. <em>The Greek Anthology</em>. Harvard University Press; W. Heinemann, New York, 1916-18. (Cinq vo)</p>
+<section id="le-manuscrit" class="level3">
+<h3 class="anchored" data-anchor-id="le-manuscrit">Le manuscrit</h3>
+<ol start="4" type="1">
+<li>Critères linguistiques − [x] Genre − [ ] Registre de langue − [x] Langue</li>
+</ol>
+<p>L’Anthologie grecque est un recueil qui regroupe la poésie épigrammatique grecque issue de la période classique jusqu’à la période byzantine, soit près de 4000 pièces, de 325 auteurs différents, s’étalant sur plus de 15 siècles. Telle que nous la possédons aujourd’hui, l’Anthologie a une histoire complexe <span class="citation" data-cites="cameron_greek_1993">[@cameron_greek_1993]</span>. L’expression « Anthologie grecque » désigne l’ensemble constitué par deux parties. D’une part, l’Anthologie palatine, un manuscrit datant du X<sup>e</sup> siècle (le <em>Codex Palatinus 23</em>) retrouvé en 1606 par Claude Saumaise à la Bibliothèque palatine d’Heidelberg. D’autre part, l’<em>Appendix Planudea</em>, soit les épigrammes absentes du manuscrit palatin présentes dans l’Anthologie de Planude, une compilation datant du début du XIV<sup>e</sup> siècle, rédigée par Maxime Planude <span class="citation" data-cites="aubreton_tradition_1968 beta_moi_2019">[@aubreton_tradition_1968; @beta_moi_2019]</span>.</p>
+<p>Monument de la littérature, l’Anthologie est le document principal qui nous transmet la poésie épigrammatique antique <span class="citation" data-cites="gutzwiller_poetics_1997 gutzwiller_poetic_1998">[@gutzwiller_poetics_1997; @gutzwiller_poetic_1998]</span>. Né en Grèce, le genre de l’épigramme évolue de manière significative dans l’histoire de la littérature grecque, mais également au sein même de l’Anthologie. Initialement composée pour être gravée (<em>epigramma</em> signifie « texte inscrit sur un objet »), l’épigramme se présente comme un petit poème, simple, composé d’une ou de deux lignes. Les premières épigrammes étaient des épitaphes ou des inscriptions accompagnant une statue, un don ou un ex-voto. Vers le VI<sup>e</sup> siècle, ces inscriptions se versifient. Dès l’époque hellénistique, l’épigramme se détache de son support, se diversifie dans son propos et devient un véritable genre littéraire, caractérisée par sa brièveté (<em>brevitas</em>) et son trait piquant (<em>argutia</em>), et se grave désormais non pas dans le marbre, mais dans l’esprit du lectorat.</p>
+<p>[LES LIVRES DE L’AP]</p>
 </section>
-<section id="preprocessing-du-corpus" class="level2">
-<h2 class="anchored" data-anchor-id="preprocessing-du-corpus">Preprocessing du corpus</h2>
+<section id="description-de-lapi" class="level3">
+<h3 class="anchored" data-anchor-id="description-de-lapi">Description de l’API</h3>
+<p>[DISTINGUER L’API DU MANUSCRIT]</p>
+<p>La Chaire de recherche du Canada sur les écritures numériques porte depuis 2014 un projet de recherche initialement intitulé “Édition numérique collaborative de l’Anthologie Palatine et de ses multiples vérités”, puis “Pour une édition numérique collaborative de l’Anthologie grecque” suite à l’intégration du manuscrit de Planude dans le projet. L’un des développements mené dans cette recherche consiste à rendre disponible ce manuscrit sur le Web grâce à une <a href="https://anthologiagraeca.org/api/">API</a> (<em>Application Programming Interface</em>) : chacune des épigrammes devient un fragment accessible au moyen d’une requête <code>GET</code>. Ce dispositif est documenté sur un <a href="http://api-doc.anthologiagraeca.org/">site web</a> dédié. Dans ce projet de fouille de texte, cette API sur laquelle nous nous appuyons pour construire notre corpus offre une collection de 4134 épigrammes en Grec ancien rédigées par 309 auteurs<a href="#fn1" class="footnote-ref" id="fnref1" role="doc-noteref"><sup>1</sup></a> répandus sur 16 siècles d’histoire. L’ensemble de ce manuscrit est disponible en accès libre. Nous remercions la Chaire de recherche du Canada sur les écritures numériques, La Perseus Digital Library, La Bibliothèque palatine (Heidelberg), et la Bibliothèque Nationale de France (Gallica).</p>
+<p>[INFORMATION SUPPLÉMENTAIRE SUR LES PARTENAIRES]</p>
+</section>
 <section id="récupération-des-données" class="level3">
 <h3 class="anchored" data-anchor-id="récupération-des-données">Récupération des données</h3>
-<p>Mettre le post sur la transformation des données de l’API : JSON to CSV</p>
-<p>Ajouter quelques lignes du csv pour l’exemple</p>
-<p>Mettre le fichier csv en pièce jointe</p>
+<ol start="2" type="1">
+<li>Critères technologiques − [x] Provenance − [x] Support − [x] Format(s) des documents constituants le corpus</li>
+<li>Critères Informationnels − [x] Discipline − [ ] Sujets − [x] Présentation sommaire du corpus − [ ] Justification du lien entre la tâche à réaliser et le corpus</li>
+</ol>
+<p>Les données sont disponibles via l’API à l’URL suivante : http://anthologiagraeca.org/api/passages. Pour ne pas travailler uniquement depuis l’API, nous avons décidé d’exporter l’ensemble des épigrammes du corpus dans un fichier que nous garderons en local. Pour ce faire, nous avons réalisé un petit script en <code>python</code> décrit ci-dessous. L’ensemble des données de l’API sont accessibles via l’<em>endpoint</em>, pour les récupérer, nous les injectons sous forme de liste dans une variable <code>results</code>. L’API sert les données paginées, de fait les données récupérées sont limitées à la première page. Or nous voulons récupérer l’ensemble du corpus. Pour parer cette fonctionnalité nous créons une boucle <code>while</code> pour modifier l’URL de la page (vers la page suivante) et indexer toutes les données de chacune des pages de l’API dans notre variable.</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Importation of the useful libraries </span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Definition of our variables for the requests </span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> requests</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> json</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="im">import</span> csv</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>url <span class="op">=</span> <span class="st">'http://anthologiagraeca.org/api/passages'</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>parameters <span class="op">=</span> {</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="st">'format'</span>:<span class="st">'json'</span>,</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="st">'limit'</span>:<span class="st">'500'</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>results <span class="op">=</span> []</span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>pagination<span class="op">=</span> <span class="va">True</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> pagination <span class="op">==</span> <span class="va">True</span> :</span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>    data <span class="op">=</span> requests.get(url, parameters).json()</span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> result <span class="kw">in</span> data[<span class="st">'results'</span>] :</span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>        results.append(result)</span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> data[<span class="st">'next'</span>] <span class="kw">is</span> <span class="va">None</span>:</span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>        pagination <span class="op">=</span> <span class="va">False</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>    <span class="cf">else</span>:</span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>        url <span class="op">=</span> data[<span class="st">'next'</span>]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>La première vérification consiste à comparer le nombre de résultats obtenus avec le nombre total d’épigrammes indexées dans le portail de l’Anthologie grecque.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">len</span>(results)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb3"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>    <span class="dv">4134</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Maintenant que nous avons bien récupéré nos données, nous souhaitons créer un fichier au format <code>JSON</code> que nous pourrons utiliser pour les futures étapes de notre fouille de texte.</p>
+<p>Nouvel export : nous avions prévu de travailler uniquement avec le format <code>JSON</code>, mais la plupart des logiciels de fouille de textes prennent en charge le format <code>CSV</code> en entrée ! Du coup nous avons retravaillé l’export de l’API pour avoir du <code>JSON</code> et du <code>CSV</code>.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Export au format json</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>mesTextes <span class="op">=</span> []</span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> epigram <span class="kw">in</span> results:</span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a>    mesTextes.append({<span class="st">'url'</span>: epigram[<span class="st">'url'</span>], <span class="st">'greekText'</span>: [text <span class="cf">for</span> text <span class="kw">in</span> epigram[<span class="st">'texts'</span>] <span class="cf">if</span> text[<span class="st">'language'</span>] <span class="op">==</span> <span class="st">'grc'</span>]})</span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Export au format csv</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a>mesChamps <span class="op">=</span> [<span class="st">'url'</span>, <span class="st">'greekText'</span>]</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>mesEpigrammes <span class="op">=</span> []</span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> epigram <span class="kw">in</span> results:</span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>    <span class="cf">for</span> text <span class="kw">in</span> epigram[<span class="st">'texts'</span>]:</span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>        <span class="cf">if</span> text[<span class="st">'language'</span>] <span class="op">==</span> <span class="st">'grc'</span>:</span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>            mesEpigrammes.append([epigram[<span class="st">'url'</span>], text[<span class="st">'text'</span>]])</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb5"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Export au format json</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>out_file <span class="op">=</span> <span class="bu">open</span>(<span class="st">'greek-epigram.json'</span>, <span class="st">'w'</span>)</span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>json.dump(mesTextes, out_file, indent<span class="op">=</span><span class="dv">3</span>, ensure_ascii<span class="op">=</span><span class="va">False</span>)</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a><span class="co"># Export au format csv</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a><span class="cf">with</span> <span class="bu">open</span>(<span class="st">'EpigramsGreek.csv'</span>, <span class="st">'w'</span>) <span class="im">as</span> f:</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    <span class="co"># using csv.writer method from CSV package</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>    write <span class="op">=</span> csv.writer(f)</span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>      </span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    write.writerow(mesChamps)</span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a>    write.writerows(mesEpigrammes)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Le résultat obtenu avec ce script comporte un document <code>JSON</code> et un document <code>CSV</code> contenant les épigrammes grecques et les URL (via l’API) qui permettent de les identifier.</p>
+</section>
+<section id="informations-précises-sur-le-corpus" class="level3">
+<h3 class="anchored" data-anchor-id="informations-précises-sur-le-corpus">Informations précises sur le corpus</h3>
+<p>En plus de présenter un intérêt certain pour l’étude du genre épigrammatique <span class="citation" data-cites="prioux_petits_2008">[@prioux_petits_2008]</span>, l’Anthologie grecque constitue un corpus précieux et diversifié de formes intertextuelles, dont celle de la variation. Plusieurs des auteurs de l’Anthologie s’inspirent en effet les uns des autres <span class="citation" data-cites="waltz_anthologie_1960">[@waltz_anthologie_1960]</span>. La <em>variatio</em>, forme très spécifique d’intertextualité commune et prisée dans la littérature grecque, consiste à reprendre une pièce d’un autre auteur et de la réécrire avec des variations stylistiques, rhétoriques ou paradigmatiques <span class="citation" data-cites="laurens_abeille_1989">[@laurens_abeille_1989]</span>. Le procédé était particulièrement apprécié des épigrammatistes : la simplicité de la forme permettait aux auteurs de s’illustrer en l’espace de quelques vers. Ainsi, l’épigramme est souvent décrite comme un art de la variation en tant que tel <span class="citation" data-cites="taran_art_1979">[@taran_art_1979]</span>. La nature même du corpus anthologique (la réunion de poèmes hétéroclites néanmoins reliés par des topoï communs) en fait une source d’intertextualité inépuisable. Certains thèmes reviennent particulièrement fréquemment, et les épigrammes se répondent, parfois avec plusieurs siècles de décalage <span class="citation" data-cites="gutzwiller_poetic_1998">[@gutzwiller_poetic_1998]</span>. Cette forme (qui s’apparente presque à du plagiat), bien vue et encouragée par les pratiques rhétoriques, commande la production de la littérature grecque et son évolution <span class="citation" data-cites="laurens_abeille_1989">[@laurens_abeille_1989]</span>.</p>
+<p>Les épigrammes sont rassemblées approximativement par sujets dans seize livres, les premiers offrant une plus grande cohérence thématique et les derniers étant plus libres.</p>
+<p>[INFORMATION PRÉCISE SUR LE CORPUS] - [ ] Taille (nombre de mots du corpus entier et moyenne approximative du nombre de mots des documents) - [ ] Information sur l’API</p>
 </section>
 <section id="preprocessing-avec-orange-data-mining" class="level3">
 <h3 class="anchored" data-anchor-id="preprocessing-avec-orange-data-mining">Preprocessing avec <a href="https://orangedatamining.com/">Orange Data Mining</a></h3>
-<p>Le corpus au format <code>CSV</code> est brut, nous y trouvons seulement les épigrammes grecques et leur URL pour les identifier, mais nous aurons certainement besoin de le compléter avec d’autres informations et/ou de le réduire pour correspondre au mieux à notre problématique.</p>
+<p>Le corpus au format <code>CSV</code> est brut, nous y trouvons seulement les épigrammes grecques et leur URL pour les identifier, mais nous aurons certainement besoin de le compléter avec d’autres informations et/ou de le réduire pour correspondre au mieux à notre problématique sur les variations.</p>
 <p><img src="imagesSCI6203-tp02/csv.png" class="img-fluid"></p>
 <p><img src="imagesSCI6203-tp02/preprocessing1.PNG" class="img-fluid"></p>
-<p>Afin de comprendre comment nous allons pouvoir travailler avec cet objet, nous avons décidé d’effectuer des premiers tests de <em>preprocessing</em> avec le logiciel <em>Orange Data Mining</em>. Orange est un outils de programmation visuelle, l’utilisation de <code>widgets</code> dans l’espace de travail du logiciel permet de créer un <code>workflow</code> et d’appliquer une suite d’opérations aux données du corpus. Nous avons suivi l’un des workflows proposé en exemple dans la documentation du logiciel afin d’observer la forme des résultats que nous pouvons obtenir. Les widgets utilisés sont les suivants :</p>
+<p>Afin de comprendre comment nous allons pouvoir travailler avec cet objet, nous avons décidé d’effectuer des premiers tests de <em>preprocessing</em> avec le logiciel <em>Orange Data Mining</em>. Orange est un outil de programmation visuelle, l’utilisation de <code>widgets</code> dans l’espace de travail du logiciel permet de créer un <code>workflow</code> et d’appliquer une suite d’opérations aux données du corpus. Nous avons suivi l’un des workflows proposé en exemple dans la documentation du logiciel afin d’observer la forme des résultats que nous pouvons obtenir. Les widgets utilisés sont les suivants :</p>
 <ul>
-<li><code>Preprocess Text</code> : ce widget permet de transformer (lowercase), de tokeniser (Regex <code>\w+</code>), de normaliser (lemmatiser en grec) et de filtrer (liste de <em>stopwords</em> créée par l’équipe de la CRCEN, et suppression des tokens en dehors d’une certaine fréquence) le corpus d’épigrammes. Avec 4218 <code>instances</code> en entrée nous obtenons 64637 <code>tokens</code> et 36279 <code>types</code>. Ce résultat n’a jamais été deux fois le même selon les paramètres utilisés.</li>
+<li><code>Preprocess Text</code> : ce widget permet de transformer (lowercase), de tokeniser (expression régulière <code>\w+</code>), de normaliser (lemmatiser selon les lemmes grecs) et de filtrer (liste de <em>stopwords</em> créée par l’équipe de la CRCEN, et suppression des tokens en dehors d’une certaine fréquence) le corpus d’épigrammes. Avec 4218 <code>instances</code> en entrée nous obtenons 64637 <code>tokens</code> et 36279 <code>types</code>. Ce résultat n’a jamais été deux fois le même selon les paramètres utilisés.</li>
 </ul>
 <p><img src="imagesSCI6203-tp02/preprocessingcorpus.PNG" class="img-fluid"></p>
 <ul>
@@ -197,12 +327,22 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="imagesSCI6203-tp02/CorpusViewer.PNG" class="img-fluid"></p>
 <p><img src="imagesSCI6203-tp02/mds.PNG" class="img-fluid"></p>
 <p>Les résultats que nous obtenons permettent de faire un premier état des lieux sur notre corpus : il nous faut correctement composer ce dernier pour commencer à réellement travailler à la problématique sur les variations. Toutefois, les regroupements par clusters (à partir des distances par cosinus) ne sont pas sans intérêt, en effet, nous remarquons que les clusters regroupent des mot-clefs appartenant à un même champ lexical. Si nous reprenons l’exemple affiché précédemment, les épigrammes du cluster sont articulées autour des mots clefs “Muse”, “peinture”, “écriture”. Cette méthode d’apprentissage automatique fait partie de l’ensemble des méthodes non supervisées (conseillée à la fin du TP01) et fera l’objet d’une attention particulière pour les prochains développements de cette étude.</p>
+<ol start="5" type="1">
+<li>Difficultés rencontrées et commentaires − [x] Veuillez indiquer les difficultés que vous avez rencontrées ou les commentaires que vous jugez pertinents de noter lors de la constitution de votre corpus, le cas échéant.</li>
+</ol>
+<p>L’API est un projet incomplet auquel des modifications sont encore apportées presque toutes les semaines, en ce sens il est importante de noter que cinq des épigrammes n’ont pas de textes en grec qui leurs sont associés dans le json. Les épigrammes 7.0 et 11.0 n’ont simplement pas de texte en grec qui leurs sont associés, bien que des images de fragments existent pour chacun. Similairement, le texte 16.10 contient uniquement les caractères “῀.”. Finalement, deux épigrammes du livre 11 ont vu leurs textes en grec être encodé “eng” plutôt que “grc” de sorte qu’une recherche automatique ne découvre pas de texte en grec ancien pour les fragments 376 et 382 de ce livre. Dans le cadre de notre fouille de texte en python, ces erreurs étaient assez peu nombreuses pour que nous puissions les corriger à la main.</p>
 
 
 </section>
 </section>
 
-</main> <!-- /main -->
+
+<div id="quarto-appendix" class="default"><section id="footnotes" class="footnotes footnotes-end-of-document" role="doc-endnotes"><h2 class="anchored quarto-appendix-heading">Footnotes</h2>
+
+<ol>
+<li id="fn1"><p>L’API du projet liste 310 auteur, mais l’un de ces derniers est “anonyme”, nous étudions donc 309 auteurs connus et un nombre inconnu d’auteurs anonymes. La documentation quant à elle mentionne 325 auteurs, il est possible que ces 16 auteurs supplémentaires n’aient pas encore été ajoutés à l’API.<a href="#fnref1" class="footnote-back" role="doc-backlink">↩︎</a></p></li>
+</ol>
+</section></div></main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
 window.document.addEventListener("DOMContentLoaded", function (event) {
   const toggleBodyColorMode = (bsSheetEl) => {

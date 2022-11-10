@@ -65,7 +65,7 @@ Pour ne pas travailler uniquement depuis l'API, nous avons décidé d'exporter l
 L'ensemble des données de l'API sont accessibles via l'*endpoint*, pour les récupérer, nous les injectons sous forme de liste dans une variable `results`.
 L’API sert les données paginées, de fait les données récupérées sont limitées à la première page. Or nous voulons récupérer l’ensemble du corpus. Pour parer cette fonctionnalité nous créons une boucle `while` pour modifier l’URL de la page (vers la page suivante) et indexer toutes les données de chacune des pages de l'API dans notre variable.
 
-```python=
+```python
 # Importation of the useful libraries 
 # Definition of our variables for the requests 
 
@@ -93,10 +93,10 @@ while pagination == True :
 
 La première vérification consiste à comparer le nombre de résultats obtenus avec le nombre total d’épigrammes indexées dans le portail de l’Anthologie grecque.
 
-```python=
+```python
 len(results)
 ```
-```python=
+```python
     4134
 ```
 
@@ -104,7 +104,7 @@ Maintenant que nous avons bien récupéré nos données, nous souhaitons créer 
 
 Nouvel export : nous avions prévu de travailler uniquement avec le format `JSON`, mais la plupart des logiciels de fouille de textes prennent en charge le format `CSV` en entrée ! Du coup nous avons retravaillé l’export de l’API pour avoir du `JSON` et du `CSV`.
 
-```python=
+```python
 # Export au format json
 mesTextes = []
 for epigram in results:
@@ -118,7 +118,7 @@ for epigram in results:
         if text['language'] == 'grc':
             mesEpigrammes.append([epigram['url'], text['text']])
 ```
-```python=
+```python
 # Export au format json
 out_file = open('greek-epigram.json', 'w')
 
