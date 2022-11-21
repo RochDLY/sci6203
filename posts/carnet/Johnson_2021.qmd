@@ -1,0 +1,24 @@
+---
+title: "Revue de littérature : Johnson et al."
+author: "Yann Audin"
+date: "2022-11-20"
+categories: [journal]
+---
+
+Court résumé de l'article de Johnson, Kyle et al. (2021).
+
+![](anthalgo.jpg)
+
+## The Classical Language Toolkit: An NLP Framework for Pre-Modern
+
+Le *Classical Language ToolKit* (CLTK) est une librairie Python qui émule les fonctions de traitement textuel automatique du *Natural Language TookKit*, mais mets l'accent sur les langues pré-modernes (anciennes, mortes ou historiques).
+Contrairement aux langues vivantes encore changeantes, les langues couvertes par CLTK ne changent plus, ce qui permet une certaine stabilité des modèles. 
+Toutefois, bien que de nouveaux textes ne s'ajoutent plus au corpus, ces derniers ont subi de fortes variations, autant au fil des années que selon les auteurs et régions. 
+
+La librairie CLTK a été produite en tenant compte de la taille des corpus dans les langues qu'elle couvre ; elle met à disposition des chercheurs plusieurs outils algorithmiques, certains provenant d'autres librairies de *Natural Language Processing*. 
+D'un point de vue technique, l'architecture de CLTK se sépare en cinq types de données créées spécifiquement pour cette librairie, ainsi qu'une classe (NLP). 
+C'est à partir de cette interface qu'un utilisateur peut appeler différentes fonctions (appelés des processus) pouvant accomplir des tâches utiles aux philologues. 
+19 différents canaux de processus (pour les 19 langues préconfigurées dans CLTK) permettent d'extraire des caractéristiques textuelles ou d'enrichir le modèle, par exemple en lemmatisant ce dernier.
+Les processus de CLTK transforment les objets DOC produit par la fonction "analyse" en y ajoutant des données supplémentaires, mais ce ne sont pas là les seules fonctions de la classe NPL.
+"FetchCorpus" est particulièrement intéressant puisqu'elle permet de récupérer les modèles générés par d'autres utilisateurs, ce qui peut considérablement accélérer la recherche. 
+En effet, plusieurs formes de modèles linguistiques demandent des corpus massif ainsi qu'une importante puissance de calcul ; en utilisant les travaux d'autres chercheurs, un travail considérable peut être évité.
