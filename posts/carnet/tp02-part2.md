@@ -207,9 +207,11 @@ Les widgets utilisés sont les suivants :
 
 ![](imagesSCI6203-tp02/hierarchicalClustering.PNG)
 
-- Les deux derniers widgets, `Corpus Viewer` et `MDS` permettent des visualisations plus fines des clusters : en sélection un cluster particulier ou un ensemble de clusters, il est possible de les afficher soit sous forme brute dans Corpus Viewer (et voir leur contenu) soit sous forme de graphe avec MDS.
+- L'avant dernier widget, `Corpus Viewer` permet une visualisation plus fine des clusters : en sélectionnant un cluster particulier ou un ensemble de clusters, il est possible de les afficher sous forme de données brutes dans une nouvelle fenêtre.
 
 ![](imagesSCI6203-tp02/CorpusViewer.PNG)
+
+- Le dernier widget `MDS`, mal placé dans cet exemple, est une autre technique de regroupement. Nous développerons ultérieurement cette approche.
 
 ![](imagesSCI6203-tp02/mds.PNG)
 
