@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.1.189">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Roch Delannay">
+<meta name="dcterms.date" content="2022-11-21">
+
+<title>SCI6203 - Évaluation du logiciel Orange Data Mining</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<script src="../../site_libs/quarto-html/quarto.js"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="dark">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../../styles.css">
+</head>
+
+<body class="nav-fixed fullcontent">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">SCI6203</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html">À propos</a>
+  </li>  
+  <li class="nav-item compact">
+    <a class="nav-link" href="https://github.com/RochDLY/sci6203"><i class="bi bi-github" role="img">
+</i> 
+ </a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Évaluation du logiciel Orange Data Mining</h1>
+                                <div class="quarto-categories">
+                <div class="quarto-category">journal</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p>Roch Delannay </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">November 21, 2022</p>
+      </div>
+    </div>
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content quarto-banner-title-block" id="quarto-document-content">
+
+
+
+
+<p>Brouillon de l’évaluation du logiciel Orange Data Mining.</p>
+<section id="rappel-des-critères" class="level2">
+<h2 class="anchored" data-anchor-id="rappel-des-critères">Rappel des critères</h2>
+<section id="description" class="level3">
+<h3 class="anchored" data-anchor-id="description">Description</h3>
+<ul>
+<li>Type de logiciel (libre, propriétaire, etc.)</li>
+<li>Type de licence (fixe, libre, académique, mixte, etc.)</li>
+<li>Coût</li>
+<li>Langage de programmation (Python, Java, etc.)</li>
+</ul>
+</section>
+<section id="maturité-du-logiciel" class="level3">
+<h3 class="anchored" data-anchor-id="maturité-du-logiciel">Maturité du logiciel</h3>
+<ul>
+<li>Âge du logiciel</li>
+<li>Année en affaires de l’entreprise</li>
+<li>Nombre de mois depuis la dernière mise à jour</li>
+<li>Le logiciel est-il encore supporté par le développeur ou le créateur</li>
+</ul>
+</section>
+<section id="interopérabilité" class="level3">
+<h3 class="anchored" data-anchor-id="interopérabilité">Interopérabilité</h3>
+<p>Critères qui impliquent la capacité du logiciel à s’harmoniser avec le système déjà en place et sa faculté de fonctionner conjointement avec d’autres ressources logicielles et matérielles.</p>
+<ul>
+<li>Compatibilité avec les plateformes et systèmes d’exploitation</li>
+<li>Intégration Web</li>
+<li>Intégration à d’autres applications</li>
+<li>Dépendances logicielles ou matérielles</li>
+</ul>
+</section>
+<section id="soutien-technique" class="level3">
+<h3 class="anchored" data-anchor-id="soutien-technique">Soutien technique</h3>
+<p>Critères qui mesurent l’aide disponible pour les utilisateurs du logiciel.</p>
+<ul>
+<li>Accès à une version de démonstration</li>
+<li>Assistance technique</li>
+<li>Documentation</li>
+<li>Tutoriel</li>
+<li>Communauté</li>
+</ul>
+</section>
+</section>
+<section id="évaluation-du-logiciel-orange-data-mining" class="level2">
+<h2 class="anchored" data-anchor-id="évaluation-du-logiciel-orange-data-mining">Évaluation du logiciel Orange Data Mining</h2>
+<section id="référence" class="level3">
+<h3 class="anchored" data-anchor-id="référence">Référence</h3>
+<p>Demsar J, Curk T, Erjavec A, Gorup C, Hocevar T, Milutinovic M, Mozina M, Polajnar M, Toplak M, Staric A, Stajdohar M, Umek L, Zagar L, Zbontar J, Zitnik M, Zupan B (2013) Orange: Data Mining Toolbox in Python, Journal of Machine Learning Research 14(Aug): 2349−2353.</p>
+</section>
+<section id="description-1" class="level3">
+<h3 class="anchored" data-anchor-id="description-1">Description</h3>
+<ul>
+<li>Type de logiciel : libre, développé par le laboratoire de bioinformatique (faculté des sciences de l’information et informatique) de l’Université de Llubljana en Slovénie.</li>
+<li>Type de license : Le logiciel est sous GNU General Public License 3.0, les documentation et documents additionnels sont tous sous licence Creative Commons Attribution-ShareAlike.</li>
+<li>Coût : gratuit</li>
+<li>Langage de programmation : Python3 et C++</li>
+</ul>
+</section>
+<section id="maturité-du-logiciel-1" class="level3">
+<h3 class="anchored" data-anchor-id="maturité-du-logiciel-1">Maturité du logiciel</h3>
+<ul>
+<li>Âge du logiciel : La version 3 du logiciel remonte à 2013, avec une première <em>release</em> en 2014 (version 3.1). Orange est développé au tout début de l’essor des algorithmes d’intelligence artificielle et dans le même laps de temps que d’autres librairie (python) telle que ScikitLearn.</li>
+<li>Année en affaires de l’entreprise : Le logiciel a été créé et est maintenu par le même laboratoire depuis 2013.</li>
+<li>Le <a href="https://github.com/biolab/orange3">dépôt Git d’Orange</a> est très dense. Les derniers <em>commits</em> remontent tout juste à quelques heures avant l’écriture de ce billet (21 novembre 2022, 18h00). Ce projet comptabilise à son actif pas moins de 14,442 <em>commits</em>, 3800 étoiles, 881 <em>forks</em>, plus de 35 <em>releases</em> (la dernière datant du 11 octobre 2022, Release 3.33.0) et pas moins de 92 contributeurs. Un autre éléments démontre l’activité de ce projet est le nombre d’<em>issues</em> (de problèmes ou questions à résoudre) : nous en observons 91 ouvertes et 2017 fermées.</li>
+</ul>
+</section>
+<section id="interopérabilité-1" class="level3">
+<h3 class="anchored" data-anchor-id="interopérabilité-1">Interopérabilité</h3>
+<ul>
+<li>Compatibilité avec les plateformes et les systèmes d’exploitation : Ce logiciel est compatible avec les systèmes d’exploitation les plus répandus. Nous avons testé de l’installer sous deux OS (Windows 10 et Ubuntu 20.04.5LTS) et nous n’avons rencontré aucune difficulté. Dans le premier cas il s’agit de télécharger un fichier exécutable (<code>.exe</code>) et de le lancer, le programme s’occupe du reste. Du côté d’Ubuntu l’installation est encore plus simple : elle est réalisable via l’installateur de paquet Python <code>pip</code> ou <code>Anaconda</code>, nous avons choisi la première option : tout s’est déroulé sans le moindre bug.</li>
+</ul>
+
+
+</section>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    setTimeout(function() {
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const cites = ref.parentNode.getAttribute('data-cites').split(' ');
+    tippyHover(ref, function() {
+      var popup = window.document.createElement('div');
+      cites.forEach(function(cite) {
+        var citeDiv = window.document.createElement('div');
+        citeDiv.classList.add('hanging-indent');
+        citeDiv.classList.add('csl-entry');
+        var biblioDiv = window.document.getElementById('ref-' + cite);
+        if (biblioDiv) {
+          citeDiv.innerHTML = biblioDiv.innerHTML;
+        }
+        popup.appendChild(citeDiv);
+      });
+      return popup.innerHTML;
+    });
+  }
+});
+</script>
+</div> <!-- /content -->
+
+
+
+</body></html>
