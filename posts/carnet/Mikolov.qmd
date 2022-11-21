@@ -1,0 +1,34 @@
+---
+title: "Revue de littérature : Mikolov et al."
+author: "Yann Audin"
+date: "2022-11-20"
+categories: [journal]
+---
+
+Court résumé de l'article de Mikolov, Tomas et al.
+
+![](anthalgo.jpg)
+
+## Efficient Estimation of Word Representations in Vector Space
+
+La librairie Word2Vec et la vectorisation de mots sont le résultat d'une démarche téléologique précisée à même le titre de cet article : l'approximation d'une représentation vectorielle des mots (ou formes) *qui soit efficace*. 
+Dans un contexte de recherche d'une intelligence artificielle générale (voir GPT-3 et LaMDA), cette intention, mise de l'avant par Mikolov et ses collègues doit servir rappel des contraintes épistémologiques de leur démarche : la vectorisation de mots ne génère pas un objet mathématique qui représente la sémantique de ce dernier. 
+Plutôt, la vectorisation de mot donne une approximation dans un espace vectoriel de l'utilisation normale d'une forme en fonction de plusieurs paramètres, le premier étant nommé le contexte.
+Ce paramètre décrit combien de formes seront considérés à la fois, car Word2Vec considère chaque formes en fonction de celles qui l'entourent dans le corpus ; le contexte est une valeur entière qui exprime combien de formes sont considérés avant et après chaque forme. 
+L'algorithme de Word2Vec minimise une fonction de perte selon l'une des deux architectures choisies ; la première, *Continuous Bag of Word* (CBOW) utilise un réseau de neurones pour prédire quel terme est le plus probable à trouver en fonction d'un contexte donné, puis vérifie sa prédiction en fonction du texte. 
+À l'inverse, le *Skip-gram* prédit quels formes feront partie du contexte à partir d'un terme, puis corrige en fonction de la réponse correcte tirée du corpus. 
+Cet algorithme entraîne son réseau de neurones sur chaque forme (et contexte) du corpus un nombre de fois (*epoch*) choisi par l'utilisateur
+
+La vectorisation de mot est une méthode rendue possible par la disponibilité de corpus massifs (dont le nombre de formes se compte en milliards) et fonctionne à partir de plusieurs présuppositions : 
+
+1. La linguistique distributionnelle : il est possible d'inférer le sens des mots à partir de leur position et distribution dans des textes;
+2. La régularité sémantique : les mots ayant des sens semblables auront des vecteurs ayant plusieurs degrés de similarité;
+3. La similarité syntaxique : les mots étant utilisés de manière similaire auront des vecteurs ayant plusieurs degrés de similarité.
+
+Une importante découverte de ce modèle est que, pour un corpus assez grand, ces vecteurs ont des propriétés additives intéressantes.
+L'exemple cité par les auteurs est le suivant : $\overrightarrow{King} - \overrightarrow{Man} + \overrightarrow{Woman} \approx \overrightarrow{Queen}$.
+En d'autres mots, il existe une certaine cohérence dans l'espace vectoriel produit, ce dernier encode les similarités syntaxiques et sémantiques sous la forme de distances plus courtes entre deux formes similaires, mais aussi les translations sémantiques.
+Ainsi, une paire de mots dont la différence vectorielle est la même que pour une autre paire de mots dénote une relation sémantique similaire. 
+C'est d'ailleurs l'une des deux manières par laquelle les auteurs évaluent leurs modèles : testant sa capacité à produire des listes de paires de mots sémantiquement liés, par exemple des pays et leurs capitales ou devises.
+Leur autre outil d'évaluation des modèles est syntaxique, ils y testent des paires comme celles des adjectifs et leurs adverbes, ou un mot et son contraire.
+Les modèles proposés par les auteurs dépassent 50% de précision à ces tests, les auteurs précisent que de plus gros modèles (avec des vecteurs et corpus plus imposants) seront sans doute en mesure de présenter de meilleurs résultats. 

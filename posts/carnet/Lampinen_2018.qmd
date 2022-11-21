@@ -1,0 +1,23 @@
+---
+title: "Revue de littérature : Lampinen et McCelland"
+author: "Yann Audin"
+date: "2022-11-20"
+categories: [journal]
+---
+
+Court résumé de l'article de Lampinen, Andrew K. et James L. McCelland.
+
+![](anthalgo.jpg)
+
+## One-shot and Few-shot Learning of Word Embeddings
+
+Les méthodes d'apprentissage machine demandent des milliers ou millions d'exemples avant d'intégrer un concept ; pire encore, il est très difficile de leur apprendre de nouveaux concepts une fois qu'ils sont entraînés. 
+Dans cet article, Lampinen et McClelland proposent de créer une intelligence artificielle capable de s'adapter à de nouvelles formes et contexte à partir des algorithmes de *one-shot learning* et *few-shot learning*.
+Cette approche pourrait servir d'alternative aux méthodes modernes entraînées sur des milliards de mots en permettant de créer un modèle capable de se perfectionner à chaque utilisation. 
+Pour l'instant, une méthode permet d'ajouter des cas à un modèle déjà entraîné : la rétropropagation du gradient qui permet de conserver le savoir déjà acquis en gelant les poids qui ne sont pas directement liés au nouveau terme. 
+Les auteurs s'inspirent donc de cette technique et s'attaquent à la tâche de la prédiction automatique du mot suivant d'une phrase. 
+Leurs résultats sont probants : la méthode étant souvent plus efficace qu'une vectorisation de mots classique (dans trois des quatre cas de figure considérés), quoique les modèle ait été affecté par les nouvelles formes ajoutées. 
+Plus précisément, la perplexité (la mesure d'à quel point un modèle prédit un échantillon avec succès) est amoindrie pour des mots étalons choisis par les auteurs ; une étude plus exhaustive du modèle (100 formes) montre que la perplexité moyenne est similaire à celle obtenue avec un entraînement sur le corpus entier. 
+La méthode proposée par les auteurs offre une meilleure distinction entre les différents contextes en comparant les probabilités qu'une forme apparaisse dans le contexte donné avec d'autres méthodes. 
+Selon les auteurs, le *one-shot learning* a toutefois une faiblesse. 
+Inspirés des travaux de Kumaran sur la *complementary learning systems theory*, ils indiquent que leur succès avec des *schema-constistent knowlege* (comme des données textuelles unilingues) ne sera pas réplicable avec des *schema-inconsistent knowledge* (des données qui sont différentes des données d'entraînement, par exemple l'intrusion d'une autre langue).

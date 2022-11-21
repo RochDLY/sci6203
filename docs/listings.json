@@ -2,6 +2,10 @@
   {
     "listing": "/index.html",
     "items": [
+      "/posts/carnet/Rodda_2017.html",
+      "/posts/carnet/Johnson_2021.html",
+      "/posts/carnet/Mikolov.html",
+      "/posts/carnet/Lampinen_2018.html",
       "/posts/carnet/tp02-part2.html",
       "/posts/post-with-code/get-greek-epigram-csv.html",
       "/posts/carnet/test-orange.html",

@@ -1,0 +1,35 @@
+---
+title: "Revue de littérature : Rodda et al."
+author: "Yann Audin"
+date: "2022-11-20"
+categories: [journal]
+---
+
+Court résumé de l'article de Rodda, Martina A., Marco S. G. Senaldi et Alessandro Lenci (2017).
+
+![](anthalgo.jpg)
+
+## Panta rei: Tracking Semantic Change with Distributional Semantics in Ancient Greek
+
+Dans le cadre du présent projet, cet article a plusieurs fonctions : 
+
+1. Justifier l'utilisation de la vectorisation de mots dans le contexte d'un corpus limité en grec ancien et en exemplifier les principes;
+2. Justifier la vectorisation de mots tirée de la linguistique distributionnelle comme une représentation adjacente à la sémantique;
+3. Confirmer que la linguistique distributionnelle permet la caractérisation des textes et mots d'un corpus;
+4. Dénoter des limites de la vectorisation de mot dans les petits corpus.
+
+Les auteurs utilisent les textes classiques grecs trouvés dans le TLG (*Thesaurus Linguae Graecae*), un projet de l'Université de Californie cherchant à compiler un corpus exhaustif de la littérature en grec ancien. 
+
+L'article est une étude cherchant à déterminer comment le lexique grec a changé avec l'avènement du christianisme et se concentrait sur des oeuvres et des traités : "The pre-Christian sub-corpus contains 6,795,253 tokens, while the Christian sub-corpus totalizes 29,051,269 tokens" [@martina_a_rodda_panta_2017].
+Leur méthodologie repose sur la modélisation des mots dans un espace vectoriel en deux temps, d'abord en lemmatisant ces derniers à l'aide de *Morpheus*, puis en créant deux modèles vectoriels à 300 dimensions avec le **DISSET** *toolkit* (un pré-chrétienté, et un post-chrétienté).
+Ce modèle fut ensuite analysé à partir de la méthode RSA (Representational Similarity Analysis) qui permet de découvrir les termes ayant le plus changé entre les deux sous-corpus. 
+Certains des termes ayant souffert d'une dérive linguistique forte confirment les intuitions des chercheurs qui les séparent en deux catégories vagues : les termes chrétiens et les termes techniques. 
+Par exemple, "παραβολή (parabolé)" change de sens entre les deux ères considérées, signifiant d'abord "comparaison", puis "parabole".
+Similairement, le terme "ὑπóστασις (hypostasis)", qui signifiant "fondation" avant l'ère chrétienne, signifiera "substance" durant cette dernière.
+
+Plusieurs des différences trouvées, cette fois en analysant chaque terme en fonction de ses voisins les plus proches dans les deux espaces linguistiques, témoignent d'une profonde dérive linguistique du grec ancien. 
+Encore, deux catégories attirent l'attention des chercheurs : les termes chrétiens et techniques (les auteurs citent en exemple les dérives de "πνεῦμα" qui signifiait "souffle" et devient "esprit, et de "δύναμις" qui signifiait "pouvoir" et devient "propriété".
+
+Finalement, à l'aide d'un graphique de type t-SNE^[Une réduction dimensionnelle permettant de visualiser spatialement les distances entre des vecteurs dont les dimensions excèdent trois.], les auteurs sont en mesure de trouver des grappes de termes parmi ceux ayant le plus changé. 
+Leur étude fait état d'une dérive linguistique liée à l'avènement de la chrétienté, mais aussi de transformations importantes dans les domaines de la médecine, de l'astronomie, de la géométrie et de la philosophie.
+Dans leur conclusion, les auteurs indiquent : "From a methodological standpoint, the fact that the results obtained from such a small corpus of purely literary texts are both meaningful and informative is of great relevance."
