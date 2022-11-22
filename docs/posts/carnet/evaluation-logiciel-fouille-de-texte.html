@@ -136,7 +136,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 
+<div>
 <p>Brouillon de l’évaluation du logiciel Orange Data Mining.</p>
+<p><img src="images-orange/image-orange.png" class="img-fluid"></p>
 <section id="rappel-des-critères" class="level2">
 <h2 class="anchored" data-anchor-id="rappel-des-critères">Rappel des critères</h2>
 <section id="description" class="level3">
@@ -179,37 +181,60 @@ ul.task-list li input[type="checkbox"] {
 </ul>
 </section>
 </section>
+</div>
 <section id="évaluation-du-logiciel-orange-data-mining" class="level2">
 <h2 class="anchored" data-anchor-id="évaluation-du-logiciel-orange-data-mining">Évaluation du logiciel Orange Data Mining</h2>
-<section id="référence" class="level3">
-<h3 class="anchored" data-anchor-id="référence">Référence</h3>
-<p>Demsar J, Curk T, Erjavec A, Gorup C, Hocevar T, Milutinovic M, Mozina M, Polajnar M, Toplak M, Staric A, Stajdohar M, Umek L, Zagar L, Zbontar J, Zitnik M, Zupan B (2013) Orange: Data Mining Toolbox in Python, Journal of Machine Learning Research 14(Aug): 2349−2353.</p>
-</section>
 <section id="description-1" class="level3">
 <h3 class="anchored" data-anchor-id="description-1">Description</h3>
 <ul>
-<li>Type de logiciel : libre, développé par le laboratoire de bioinformatique (faculté des sciences de l’information et informatique) de l’Université de Llubljana en Slovénie.</li>
-<li>Type de license : Le logiciel est sous GNU General Public License 3.0, les documentation et documents additionnels sont tous sous licence Creative Commons Attribution-ShareAlike.</li>
-<li>Coût : gratuit</li>
-<li>Langage de programmation : Python3 et C++</li>
+<li>Type de logiciel : <em>Orange Data Mining</em> (Orange) est un logiciel libre, développé par le laboratoire de bioinformatique (faculté des sciences de l’information et informatique) de l’Université de Llubljana en Slovénie.</li>
+<li>Type de licence : Le logiciel est sous GNU General Public License 3.0, les documentations et documents additionnels sont tous sous licence Creative Commons Attribution-ShareAlike.</li>
+<li>Coût : Aucun paiement n’est requis pour utiliser le logiciel, toutefois il est possible d’effectuer une donation pour financer le projet.</li>
+<li>Langage de programmation : La base logicielle est développée en C++, et les <em>widgets</em>, nous y reviendrons plus tard, sont développés avec le langage de programmation Python.</li>
 </ul>
 </section>
 <section id="maturité-du-logiciel-1" class="level3">
 <h3 class="anchored" data-anchor-id="maturité-du-logiciel-1">Maturité du logiciel</h3>
 <ul>
-<li>Âge du logiciel : La version 3 du logiciel remonte à 2013, avec une première <em>release</em> en 2014 (version 3.1). Orange est développé au tout début de l’essor des algorithmes d’intelligence artificielle et dans le même laps de temps que d’autres librairie (python) telle que ScikitLearn.</li>
+<li>Âge du logiciel : La version 3 du logiciel remonte à 2013, avec une première <em>release</em> en 2014 (version 3.1). Orange est développé au tout début de l’essor des algorithmes d’intelligence artificielle et dans le même laps de temps que d’autres librairies (python) telle que ScikitLearn.</li>
 <li>Année en affaires de l’entreprise : Le logiciel a été créé et est maintenu par le même laboratoire depuis 2013.</li>
-<li>Le <a href="https://github.com/biolab/orange3">dépôt Git d’Orange</a> est très dense. Les derniers <em>commits</em> remontent tout juste à quelques heures avant l’écriture de ce billet (21 novembre 2022, 18h00). Ce projet comptabilise à son actif pas moins de 14,442 <em>commits</em>, 3800 étoiles, 881 <em>forks</em>, plus de 35 <em>releases</em> (la dernière datant du 11 octobre 2022, Release 3.33.0) et pas moins de 92 contributeurs. Un autre éléments démontre l’activité de ce projet est le nombre d’<em>issues</em> (de problèmes ou questions à résoudre) : nous en observons 91 ouvertes et 2017 fermées.</li>
+<li>Le <a href="https://github.com/biolab/orange3">dépôt Git d’Orange</a> est très dense. Les derniers <em>commits</em> remontent tout juste à quelques heures avant l’écriture de ce billet (21 novembre 2022, 18h00). Ce projet comptabilise à son actif pas moins de 14,442 <em>commits</em>, 3800 étoiles, 881 <em>forks</em>, plus de 35 <em>releases</em> (la dernière datant du 11 octobre 2022, Release 3.33.0) et pas moins de 92 contributeurs. Un autre élément démontre l’activité de ce projet est le nombre d’<em>issues</em> (de problèmes ou questions à résoudre) : nous en observons 91 ouvertes et 2017 fermées.</li>
 </ul>
 </section>
 <section id="interopérabilité-1" class="level3">
 <h3 class="anchored" data-anchor-id="interopérabilité-1">Interopérabilité</h3>
 <ul>
-<li>Compatibilité avec les plateformes et les systèmes d’exploitation : Ce logiciel est compatible avec les systèmes d’exploitation les plus répandus. Nous avons testé de l’installer sous deux OS (Windows 10 et Ubuntu 20.04.5LTS) et nous n’avons rencontré aucune difficulté. Dans le premier cas il s’agit de télécharger un fichier exécutable (<code>.exe</code>) et de le lancer, le programme s’occupe du reste. Du côté d’Ubuntu l’installation est encore plus simple : elle est réalisable via l’installateur de paquet Python <code>pip</code> ou <code>Anaconda</code>, nous avons choisi la première option : tout s’est déroulé sans le moindre bug.</li>
+<li><p>Compatibilité avec les plateformes et les systèmes d’exploitation : Ce logiciel est compatible avec les systèmes d’exploitation les plus répandus. Nous avons testé de l’installer sous deux OS (Windows 10 et Ubuntu 20.04.5 LTS) et nous n’avons rencontré aucune difficulté. Dans le premier cas, il s’agit de télécharger un fichier exécutable <code>.exe</code> et de l’exécuter, le <em>wizard</em> d’installation s’occupe alors du reste. Du côté d’Ubuntu l’installation est encore plus simple : elle est réalisable dans le terminal via l’installateur de paquet Python <code>pip</code> ou <code>Anaconda</code>, nous avons choisi la première option : tout s’est déroulé sans le moindre bug.</p></li>
+<li><p>Intégration à d’autres applications : Orange n’est pas forcément prévu pour s’inscrire dans un écosystème où les logiciels peuvent communiquer entre eux. Les formats de données utilisables en entrée du processus sont assez larges tant qu’ils respectent la forme d’un tableau (<code>.xlsx</code>, <code>.csv</code>, Google Sheet, table d’une base de données SQL). Par contre, l’export est plus mince : seules les visualisations générées et les modèles (<em>workflows</em>) peuvent être exportés depuis le logiciel. Cependant, le logiciel offre beaucoup de plasticité, notamment au niveau des méthodes mises en œuvre puisqu’il est possible de développer ses propres <em>widgets</em> en Python et de les utiliser dans Orange, par exemple pour créer des workflows adaptés à des questions de recherche ou des modèles de données peu conventionnels.</p></li>
+<li><p>Dépendances logicielles ou matérielles : Il n’y aucune dépendance hormis le langage de programmation Python (qui est nativement installé sur les Mac et les Linus).</p></li>
+</ul>
+</section>
+<section id="soutien-technique-1" class="level3">
+<h3 class="anchored" data-anchor-id="soutien-technique-1">Soutien technique</h3>
+<p>Critères qui mesurent l’aide disponible pour les utilisateurs du logiciel.</p>
+<ul>
+<li>Accès à une version de démonstration : Il n’y a pas réellement de version de démonstration. Plusieurs exemples sont fournis à l’intérieur du logiciel et permettent de tester directement différents <em>workflows</em> ou méthodes à appliquer à des corpus de données. D’ailleurs, plusieurs corpus sont également disponibles avec le logiciel. Au-delà de leur emploi et de l’application de calculs sur ces données, il est possible de les ouvrir et regarder la structure des données (fait sans doute important lors d’une phase d’apprentissage des outils d’intelligence artificielle).</li>
+<li>Assistance technique : Il est possible de prendre contact avec la communauté Orange à travers différentes plateformes : le site Web, les réseaux sociaux, ou encore Discord et Stack Exchange.</li>
+<li>Documentation : Orange fournit des documentations très précises quant aux différents usages du logiciel ou des développements possibles. Cependant, nous noterons que la documentation ne décrit pas complètement le comportement des algorithmes que les usagers vont employer.</li>
+<li>Tutoriels : Des tutoriels et des exemples sont disponibles un peu partout dans Orange : il est possible de trouver dans le logiciel des <em>workflows</em> génériques et prêt à l’emploi, avec des explications pour chacune des étapes à réaliser. L’équipe d’orange a également publié des tutoriels vidéos sur la plateforme Youtube et des documentations plus poussées pour des utilisateurs avancés. En tant que nouvel utilisateur, nous nous sentons vraiment accompagné dans l’apprentissage de l’outil.</li>
+</ul>
+</section>
+<section id="quelques-essais-de-loutil" class="level3">
+<h3 class="anchored" data-anchor-id="quelques-essais-de-loutil">Quelques essais de l’outil</h3>
+</section>
+</section>
+<section id="références" class="level2">
+<h2 class="anchored" data-anchor-id="références">Références</h2>
+<ul>
+<li><p>Demsar J, Curk T, Erjavec A, Gorup C, Hocevar T, Milutinovic M, Mozina M, Polajnar M, Toplak M, Staric A, Stajdohar M, Umek L, Zagar L, Zbontar J, Zitnik M, Zupan B (2013) Orange: Data Mining Toolbox in Python, Journal of Machine Learning Research 14(Aug): 2349−2353.</p></li>
+<li><p>Site Web du logiciel : https://orangedatamining.com/</p></li>
+<li><p>Documentation Data Mining Library : https://orange3.readthedocs.io/projects/orange-data-mining-library/en/latest/index.html#</p></li>
+<li><p>Documentation utilisateurs (visual programming) : https://orange3.readthedocs.io/projects/orange-visual-programming/en/latest/index.html</p></li>
+<li><p>Documentation développements : https://orange3.readthedocs.io/projects/orange-development/en/latest/index.html</p></li>
+<li><p>GitHub du projet : https://github.com/biolab/orange3</p></li>
 </ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
