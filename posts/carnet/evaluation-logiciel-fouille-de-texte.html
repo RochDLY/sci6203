@@ -100,6 +100,7 @@ ul.task-list li input[type="checkbox"] {
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">Évaluation du logiciel Orange Data Mining</h1>
+            <p class="subtitle lead">SCI6203 - Devoir 3</p>
                                 <div class="quarto-categories">
                 <div class="quarto-category">journal</div>
               </div>
@@ -187,7 +188,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="description-1" class="level3">
 <h3 class="anchored" data-anchor-id="description-1">Description</h3>
 <ul>
-<li>Type de logiciel : <em>Orange Data Mining</em> (Orange) est un logiciel libre, développé par le laboratoire de bioinformatique (faculté des sciences de l’information et informatique) de l’Université de Llubljana en Slovénie.</li>
+<li>Type de logiciel : <em>Orange Data Mining</em> (Orange) est un logiciel libre, développé par le laboratoire de bioinformatique (faculté des sciences de l’information et informatique) de l’Université de Llubljana en Slovénie. Nous levons la confusion possible avec la firme française Orange : Orange Data Mining n’a aucun lien avec cette entreprise de services en télécommunication.</li>
 <li>Type de licence : Le logiciel est sous GNU General Public License 3.0, les documentations et documents additionnels sont tous sous licence Creative Commons Attribution-ShareAlike.</li>
 <li>Coût : Aucun paiement n’est requis pour utiliser le logiciel, toutefois il est possible d’effectuer une donation pour financer le projet.</li>
 <li>Langage de programmation : La base logicielle est développée en C++, et les <em>widgets</em>, nous y reviendrons plus tard, sont développés avec le langage de programmation Python.</li>
@@ -198,15 +199,15 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Âge du logiciel : La version 3 du logiciel remonte à 2013, avec une première <em>release</em> en 2014 (version 3.1). Orange est développé au tout début de l’essor des algorithmes d’intelligence artificielle et dans le même laps de temps que d’autres librairies (python) telle que ScikitLearn.</li>
 <li>Année en affaires de l’entreprise : Le logiciel a été créé et est maintenu par le même laboratoire depuis 2013.</li>
-<li>Le <a href="https://github.com/biolab/orange3">dépôt Git d’Orange</a> est très dense. Les derniers <em>commits</em> remontent tout juste à quelques heures avant l’écriture de ce billet (21 novembre 2022, 18h00). Ce projet comptabilise à son actif pas moins de 14,442 <em>commits</em>, 3800 étoiles, 881 <em>forks</em>, plus de 35 <em>releases</em> (la dernière datant du 11 octobre 2022, Release 3.33.0) et pas moins de 92 contributeurs. Un autre élément démontre l’activité de ce projet est le nombre d’<em>issues</em> (de problèmes ou questions à résoudre) : nous en observons 91 ouvertes et 2017 fermées.</li>
+<li>Le <a href="https://github.com/biolab/orange3">dépôt Git d’Orange</a> est très dense. Les derniers <em>commits</em> remontent tout juste à quelques heures avant l’écriture de ce billet (21 novembre 2022, 18h00). Ce projet comptabilise à son actif pas moins de 14,442 <em>commits</em>, 3800 étoiles, 881 <em>forks</em>, plus de 35 <em>releases</em> (la dernière datant du 11 octobre 2022, <em>release</em> 3.33.0) et pas moins de 92 contributeurs. Un autre élément qui démontre l’activité de ce projet est le nombre d’<em>issues</em> (de problèmes ou questions à résoudre) : nous en observons 91 ouvertes et 2017 fermées.</li>
 </ul>
 </section>
 <section id="interopérabilité-1" class="level3">
 <h3 class="anchored" data-anchor-id="interopérabilité-1">Interopérabilité</h3>
 <ul>
-<li><p>Compatibilité avec les plateformes et les systèmes d’exploitation : Ce logiciel est compatible avec les systèmes d’exploitation les plus répandus. Nous avons testé de l’installer sous deux OS (Windows 10 et Ubuntu 20.04.5 LTS) et nous n’avons rencontré aucune difficulté. Dans le premier cas, il s’agit de télécharger un fichier exécutable <code>.exe</code> et de l’exécuter, le <em>wizard</em> d’installation s’occupe alors du reste. Du côté d’Ubuntu l’installation est encore plus simple : elle est réalisable dans le terminal via l’installateur de paquet Python <code>pip</code> ou <code>Anaconda</code>, nous avons choisi la première option : tout s’est déroulé sans le moindre bug.</p></li>
-<li><p>Intégration à d’autres applications : Orange n’est pas forcément prévu pour s’inscrire dans un écosystème où les logiciels peuvent communiquer entre eux. Les formats de données utilisables en entrée du processus sont assez larges tant qu’ils respectent la forme d’un tableau (<code>.xlsx</code>, <code>.csv</code>, Google Sheet, table d’une base de données SQL). Par contre, l’export est plus mince : seules les visualisations générées et les modèles (<em>workflows</em>) peuvent être exportés depuis le logiciel. Cependant, le logiciel offre beaucoup de plasticité, notamment au niveau des méthodes mises en œuvre puisqu’il est possible de développer ses propres <em>widgets</em> en Python et de les utiliser dans Orange, par exemple pour créer des workflows adaptés à des questions de recherche ou des modèles de données peu conventionnels.</p></li>
-<li><p>Dépendances logicielles ou matérielles : Il n’y aucune dépendance hormis le langage de programmation Python (qui est nativement installé sur les Mac et les Linus).</p></li>
+<li><p>Compatibilité avec les plateformes et les systèmes d’exploitation : Ce logiciel est compatible avec les systèmes d’exploitation les plus répandus. Nous avons testé de l’installer sous deux OS (Windows 10 et Ubuntu 20.04.5 LTS) et nous n’avons rencontré aucune difficulté. Dans le premier cas, il s’agit de télécharger un fichier exécutable <code>.exe</code> et de l’exécuter, le <em>wizard</em> d’installation s’occupe alors du reste. Du côté d’Ubuntu, l’installation est encore plus simple : elle est réalisable dans le terminal via l’installateur de paquet Python <code>pip</code> ou <code>Anaconda</code>, nous avons choisi la première option : tout s’est déroulé sans le moindre bug.</p></li>
+<li><p>Intégration à d’autres applications : Orange n’est pas forcément prévu pour s’inscrire dans un écosystème où les logiciels peuvent communiquer entre eux. Les formats de données utilisables en entrée du processus sont assez larges tant qu’ils respectent la forme d’un tableau (<code>.xlsx</code>, <code>.csv</code>, Google Sheet, table d’une base de données SQL). Par contre, les possibilités d’exports sont plus minces : seules les visualisations générées et les modèles (<em>workflows</em>) peuvent être exportés depuis le logiciel. Cependant, le logiciel offre beaucoup de plasticité, notamment au niveau des méthodes mises en œuvre puisqu’il est possible de développer ses propres <em>widgets</em> en Python et de les utiliser dans Orange, par exemple pour créer des <em>workflows</em> adaptés à des questions de recherche ou des modèles de données peu conventionnels.</p></li>
+<li><p>Dépendances logicielles ou matérielles : Il n’y aucune dépendance hormis le langage de programmation Python (qui est nativement installé sur les distributions Mac et Linux).</p></li>
 </ul>
 </section>
 <section id="soutien-technique-1" class="level3">
@@ -215,12 +216,40 @@ ul.task-list li input[type="checkbox"] {
 <ul>
 <li>Accès à une version de démonstration : Il n’y a pas réellement de version de démonstration. Plusieurs exemples sont fournis à l’intérieur du logiciel et permettent de tester directement différents <em>workflows</em> ou méthodes à appliquer à des corpus de données. D’ailleurs, plusieurs corpus sont également disponibles avec le logiciel. Au-delà de leur emploi et de l’application de calculs sur ces données, il est possible de les ouvrir et regarder la structure des données (fait sans doute important lors d’une phase d’apprentissage des outils d’intelligence artificielle).</li>
 <li>Assistance technique : Il est possible de prendre contact avec la communauté Orange à travers différentes plateformes : le site Web, les réseaux sociaux, ou encore Discord et Stack Exchange.</li>
-<li>Documentation : Orange fournit des documentations très précises quant aux différents usages du logiciel ou des développements possibles. Cependant, nous noterons que la documentation ne décrit pas complètement le comportement des algorithmes que les usagers vont employer.</li>
-<li>Tutoriels : Des tutoriels et des exemples sont disponibles un peu partout dans Orange : il est possible de trouver dans le logiciel des <em>workflows</em> génériques et prêt à l’emploi, avec des explications pour chacune des étapes à réaliser. L’équipe d’orange a également publié des tutoriels vidéos sur la plateforme Youtube et des documentations plus poussées pour des utilisateurs avancés. En tant que nouvel utilisateur, nous nous sentons vraiment accompagné dans l’apprentissage de l’outil.</li>
+<li>Documentation : Orange fournit des documentations très précises quant aux différents usages du logiciel ou des développements possibles (voir les URLs dans la section références en bas du document). Cependant, nous noterons que la documentation ne décrit pas complètement le comportement des algorithmes que les usagers vont employer.</li>
+<li>Tutoriels : Des tutoriels et des exemples sont disponibles un peu partout dans Orange : il est possible de trouver dans le logiciel des <em>workflows</em> génériques prêt à l’emploi, avec des explications pour chacune des étapes à réaliser. L’équipe d’Orange a également publié des tutoriels vidéos sur la plateforme Youtube et des documentations plus poussées pour des utilisateurs avancés. En tant que nouveaux utilisateurs, nous nous sentons vraiment accompagnés dans l’apprentissage et la prise en main de l’outil.</li>
 </ul>
 </section>
 <section id="quelques-essais-de-loutil" class="level3">
 <h3 class="anchored" data-anchor-id="quelques-essais-de-loutil">Quelques essais de l’outil</h3>
+<section id="principe-de-fonctionnement" class="level4">
+<h4 class="anchored" data-anchor-id="principe-de-fonctionnement">Principe de fonctionnement</h4>
+<p>Orange est basé sur le principe de <em>visual programming</em> (comme pour les logiciels <a href="https://puredata.info/">Pure Data</a> ou <a href="https://cycling74.com/products/max">Max/MSP</a>). Une fenêtre s’ouvre et l’utilisateur doit assembler des <code>widgets</code> dans le plan de travail pour créer son <code>workflow</code> : ce sont les différentes étapes et méthodes appliquées au corpus de données. L’utilisateur relie les <em>widgets</em> entre eux pour automatiser la communication des données (<em>in</em> et <em>out</em>) jusqu’à la dernière étape choisie dans le <em>workflow</em>.</p>
+<p>Tout <em>workflow</em> est initié par l’importation des données, auxquelles seront appliqués différents traitements en vue d’obtenir les résultats escomptés. Orange est tout autant utilisé pour faire de la fouille de données que de la fouille de textes. D’ailleurs, dans le site Web du logiciel, un système de mot-clefs permet de repérer rapidement les exemples de <em>workflow</em> appartenant à telle ou telle catégorie de traitement.</p>
+<p>Ci-dessous un premier test réalisé avec un des jeux de données (test) fourni par le logiciel.</p>
+<p><img src="images-orange/test-orange.png" class="img-fluid"></p>
+<p>Le jeu de données est un <code>corpus</code> de texte au format <code>.tab</code>.</p>
+<p>Le premier widget que nous appliquerons au corpus sera le <code>preprocess text</code>.</p>
+<p><img src="images-orange/preprocess-orange.png" class="img-fluid"></p>
+<p>Cette phase permet de transformer notre texte (application du <code>lowercase</code> pour enlever les majuscules), de le tokeniser grâce à l’expression régulière <code>\w+</code> (pour matcher avec tous les caractères sauf les espaces), puis de le filtrer grâce à une liste de <code>stopwords</code> en anglais.</p>
+<p>Le deuxième widget sera appliqué au corpus preprocessé, il s’agit du widget <code>bag of words</code>.</p>
+<p><img src="images-orange/bag-of-words.png" class="img-fluid"></p>
+<p>Bag of words permet de générer un compteur pour chaque donnée du document.</p>
+<p>Le troisième widget de ce workflow s’appelle <code>Distances</code>.</p>
+<p><img src="images-orange/distances.png" class="img-fluid"></p>
+<p>Il permet de calculer la distance entre les documents (cosinus). Plus la distance est petite, plus les documents sont proches et similaires.</p>
+<p>Le quatrième widget se nomme <code>Hierarchical Clustering</code>.</p>
+<p><img src="images-orange/clustering.png" class="img-fluid"></p>
+<p>Cette étape marque le début de la visualisation des résultats après transformation des données : elle permet de visualiser la hiérarchie des documents à travers un dendrogramme.</p>
+<p>Le dernier widget, encore une visualisation, est intitulé <code>MDS</code>.</p>
+<p><img src="images-orange/plop.png" class="img-fluid"></p>
+<p>Il offre une visualisation spatiale de nos données réalisée grâce à un autre calcul de distance.</p>
+</section>
+</section>
+<section id="commentaires" class="level3">
+<h3 class="anchored" data-anchor-id="commentaires">Commentaires</h3>
+<p>Un autre test a été réalisé avec notre corpus d’épigrammes au format <code>.csv</code> (français, anglais, grec ancien) et il n’a pas été aussi simple d’appliquer ce <em>workflow</em> à nos données. Les résultats obtenus ne faisaient pas sens : autant la génération d’un nuage de mot (avec le widget <code>wordcloud</code>) est très facile, autant les calculs de distance et la création de clusters hiérarchisés ne fonctionnait pas. Le problème est relativement simple à cibler : l’ordinateur utilisé pour le test surchauffe et n’est pas assez puissant pour traiter ce corpus (le logiciel “ne répond plus”).</p>
+<p>Orange est un logiciel confortable à utiliser, la prise en main se fait très rapidement et la documentation (très fournie) accompagne l’utilisateur tout au long de son apprentissage. On trouve des informations sur le site Web du logiciel ainsi qu’une multitude de petits tutoriels sur YouTube pour expliquer chacune des étapes. Cependant, dès les premières manipulations, nous avons ressenti une légère frustration (relative au <em>visual programming</em>) car les <em>widgets</em>, certes très intuitifs, camouflent le fonctionnement des algorithmes appliqués au corpus. L’agencement des widgets entre eux permet de bien voir le parcours de nos données, mais cela rend les calculs appliqués opaques. N’étant pas expert dans le domaine de la fouille de texte (plutôt néophyte) il est plus difficile de comprendre comment fonctionne exactement chaque <em>widget</em>. Par exemple, le <em>widget</em> <code>Distances</code> ne propose qu’un petit sélecteur pour le type de distance à calculer, mais que se passe-t-il sous ce sélecteur ? Nous obtenons des résultats, mais sans comprendre comment le logiciel les a générés.</p>
 </section>
 </section>
 <section id="références" class="level2">
